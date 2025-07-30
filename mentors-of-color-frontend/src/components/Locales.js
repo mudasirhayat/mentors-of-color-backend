@@ -33,11 +33,18 @@ const Locales = ({ children }) => {
     loadLocaleData(i18n).then((d) => {
       setMessages(d.default);
     });
+try {
   }, [i18n]);
-
-  return (
-    <>
-      {messages && (
+      if (messages) {
+        return (
+          <>
+            {messages}
+          </>
+        );
+      }
+} catch (error) {
+  console.error(error);
+}
         <IntlProvider locale={i18n} defaultLocale="en" messages={messages}>
           {children}
         </IntlProvider>
