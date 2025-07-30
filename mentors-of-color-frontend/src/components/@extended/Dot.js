@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
-
-// material-ui
 import { useTheme } from '@mui/material/styles';
 import { Box } from '@mui/material';
+
+try {
+  // Code that may throw an error
+} catch (error) {
+  console.error
 
 // project import
 import getColors from 'utils/getColors';
