@@ -207,10 +207,10 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'Test1234',
-        'HOST':  'moc-db-qa.cfxqvhlizyoj.us-east-1.rds.amazonaws.com',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST':  '',
         'PORT': 5432,
     }
 }
@@ -285,10 +285,10 @@ EMAIL_BACKEND = os.environ.get(
 # EMAIL_HOST = os.environ.get("EMAIL_HOST")
 EMAIL_PORT = 587
 EMAIL_USE_TLS =True
-EMAIL_HOST = "email-smtp.us-east-1.amazonaws.com"
-EMAIL_HOST_PASSWORD = "BEMfLG1I5kLQnbA8xehykZWshzw0mfetdtMBee50+yD3"
-EMAIL_HOST_USER = "AKIATUXNFVWMIISVHMSS"
-DEFAULT_FROM_EMAIL = "no-reply@mailer.mentorsofcolor.com"
+EMAIL_HOST = ""
+EMAIL_HOST_PASSWORD = ""
+EMAIL_HOST_USER = ""
+DEFAULT_FROM_EMAIL = ""
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
