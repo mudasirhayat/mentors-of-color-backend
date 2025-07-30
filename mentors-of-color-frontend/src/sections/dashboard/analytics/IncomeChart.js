@@ -135,13 +135,7 @@ const IncomeAreaChart = ({ slot, quantity }) => {
         setSeries([
           {
             name: 'Income',
-            data: slot === 'month' ? [100, 40, 60, 40, 40, 40, 80, 40, 40, 50, 40, 40] : [100, 20, 60, 20, 20, 80, 20]
-          }
-        ]);
-        break;
-
-      case 'By margin':
-        setSeries([
+data: slot === 'month' ? [100, 40, 60, 40, 40, 40, 80, 40, 40, 50, 40, 40] : [100,
           {
             name: 'Income',
             data: slot === 'month' ? [120, 85, 101, 98, 87, 105, 91, 114, 94, 86, 115, 35] : [51, 40, 28, 51, 42, 109, 100]
