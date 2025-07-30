@@ -1,0 +1,72 @@
+import axios from 'axios';
+
+const axiosServices = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8080' });
+const axiosServices1 = axios.create({ baseURL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080' });
+
+// ==============================|| AXIOS - FOR MOCK SERVICES ||============================== //
+
+axiosServices.interceptors.request.use(
+  async (config) => {
+    const accessToken = localStorage.getItem('serviceToken1');
+    if (accessToken) {
+      config.headers['Authorization'] = `Bearer ${accessToken}`;
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+axiosServices1.interceptors.request.use(
+  async (config) => {
+    const accessToken = localStorage.getItem('serviceToken');
+    if (accessToken) {
+      config.headers['Authorization'] = `1`;
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+axiosServices.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response.status === 401 && !window.location.href.includes('/login')) {
+      // window.location = '/login';
+      console.log(error.response)
+      return
+    }
+    return Promise.reject((error.response && error.response.data) || 'Wrong Services');
+  }
+);
+
+export default axiosServices;
+
+export { axiosServices1 }
+
+export const fetcher = async (args) => {
+  const [url, config] = Array.isArray(args) ? args : [args];
+
+  const res = await axiosServices.get(url, { ...config });
+
+  return res.data;
+};
+
+export const fetcher1 = async (args) => {
+  const [url, config] = Array.isArray(args) ? args : [args];
+
+  const res = await axiosServices1.get(url, { ...config });
+
+  return res.data;
+};
+
+export const fetcherPost = async (args) => {
+  const [url, config] = Array.isArray(args) ? args : [args];
+
+  const res = await axiosServices.post(url, { ...config });
+
+  return res.data;
+};

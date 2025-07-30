@@ -1,0 +1,45 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Database
+*.sqlite3
+db.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+*.env
+
+# System files
+.DS_Store
+
+# Django static files
+staticfiles/
+media/
+static/admin/
+static/rest_framework/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+
+# Coverage
+htmlcov/
+.coverage

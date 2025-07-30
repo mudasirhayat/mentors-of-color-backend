@@ -1,0 +1,13 @@
+    [Unit]
+    Description=gunicorn daemon
+    Requires=gunicorn.socket
+    After=network.target
+
+    [Service]
+    User=ubuntu
+    Group=www-data
+    WorkingDirectory=/home/ubuntu/mentors-of-color-backend
+    ExecStart=   config.asgi:application -w 2 -k uvicorn.workers.UvicornWorker --bind
+    unix:/run/gunicorn.sock
+    [Install]
+    WantedBy=multi-user.target
