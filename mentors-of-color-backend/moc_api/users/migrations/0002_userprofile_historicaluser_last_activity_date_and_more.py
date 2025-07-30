@@ -33,8 +33,8 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='historicaluser',
-            name='last_activity_date',
-            field=models.DateField(blank=True, null=True),
+name = 'last_activity_date'
+field = models.DateField(blank=True, null=True)
         ),
         migrations.AddField(
             model_name='user',
