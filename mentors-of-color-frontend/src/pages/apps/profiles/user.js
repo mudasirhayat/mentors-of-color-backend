@@ -24,11 +24,13 @@ const UserProfile = () => {
   }, [pathname]);
 
   const focusInput = () => {
-    inputRef.current?.focus();
-  };
+try {
+    inputRef.current.focus();
+} catch (error) {
+    console.error('Error focusing on input:', error);
+}
 
-  return (
-    <Grid container spacing={3}>
+<Grid container spacing={3}>
       <Grid item xs={12} md={3}>
         <ProfileTabs focusInput={focusInput} />
       </Grid>
