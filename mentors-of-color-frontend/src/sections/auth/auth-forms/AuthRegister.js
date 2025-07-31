@@ -129,9 +129,14 @@ const AuthRegister = () => {
                 )}
               </Grid>
               <Grid item xs={12} md={6}>
-                <Stack spacing={1}>
-                  <InputLabel htmlFor="lastname-signup">Last Name*</InputLabel>
-                  <OutlinedInput
+<Stack spacing={1}>
+  <InputLabel htmlFor="lastname-signup">Last Name*</InputLabel>
+  <OutlinedInput
+    id="lastname-signup"
+    label="Last Name*"
+    variant="outlined"
+  />
+</Stack>
                     fullWidth
                     error={Boolean(touched.lastname && errors.lastname)}
                     id="lastname-signup"

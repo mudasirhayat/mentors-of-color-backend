@@ -8,12 +8,8 @@ import { SnackbarProvider } from 'notistack';
 // project import
 import Loader from 'components/Loader';
 import { useGetSnackbar } from 'api/snackbar';
-
-// assets
 import { CheckCircleOutlined, CloseCircleOutlined, InfoCircleOutlined, WarningOutlined } from '@ant-design/icons';
-
-// custom styles
-const StyledSnackbarProvider = styled(SnackbarProvider)(({ theme }) => ({
+const StyledSnackbarProvider = styled(SnackbarProvider)(({ theme }) =>
   '&.notistack-MuiContent-default': {
     backgroundColor: theme.palette.primary.main
   },

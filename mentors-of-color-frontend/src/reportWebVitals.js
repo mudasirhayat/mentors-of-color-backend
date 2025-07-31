@@ -4,10 +4,11 @@ const reportWebVitals = (onPerfEntry) => {
       getCLS(onPerfEntry);
       getFID(onPerfEntry);
       getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
-  }
-};
+try {
+  getLCP(onPerfEntry);
+  getTTFB(onPerfEntry);
+} catch (error) {
+  console.error('An error occurred:', error);
+}
 
 export default reportWebVitals;

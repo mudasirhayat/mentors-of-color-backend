@@ -7,12 +7,13 @@ import { Typography, Stack, CardMedia } from '@mui/material';
 // assets
 import UploadCover from 'assets/images/upload/upload.svg';
 
-// ==============================|| UPLOAD - PLACEHOLDER ||============================== //
-
 export default function PlaceholderContent({ type }) {
-  return (
-    <>
-      {type !== 'STANDARD' && (
+    if (type !== 'STANDARD') {
+        throw new Error('Invalid type provided');
+    }
+
+    // Original code here
+}
         <Stack
           spacing={2}
           alignItems="center"

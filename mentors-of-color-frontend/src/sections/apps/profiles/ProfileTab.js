@@ -35,11 +35,10 @@ function getPathIndex(pathname) {
 const ProfileTab = () => {
   const theme = useTheme();
   const navigate = useNavigate();
-  const { pathname } = useLocation();
+const { pathname } = useLocation();
+const [selectedIndex, setSelectedIndex] = useState(getPathIndex(pathname));
 
-  const [selectedIndex, setSelectedIndex] = useState(getPathIndex(pathname));
-
-  const handleListItemClick = (index, route) => {
+const handleListItemClick = (index, route) => {
     setSelectedIndex(index);
     navigate(route);
   };

@@ -1,10 +1,10 @@
 // ==============================|| DROPZONE - GET FILE INFO ||============================== //
 
 export default function getDropzoneData(file, index) {
-  if (typeof file === 'string') {
-    return {
-      key: index ? `${file}-${index}` : file,
-      preview: file
+if (typeof file === 'string') {
+    key: index ? `${file}-${index}` : file,
+    preview: file
+}
     };
   }
 
