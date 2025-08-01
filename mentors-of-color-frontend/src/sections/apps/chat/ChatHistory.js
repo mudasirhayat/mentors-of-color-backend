@@ -142,8 +142,12 @@ const ChatHistory = ({
             <Stack direction="row" spacing={1.25} alignItems="flex-start">
               <UserAvatar
                 user={{
-                  online_status: selectedChatList.online_status,
-                  avatar: selectedChatList.avatar,
+try {
+    online_status: selectedChatList.online_status,
+    avatar: selectedChatList.avatar,
+} catch (error) {
+    console.error(error);
+}
                   name: selectedChatList.name,
                 }}
               />
