@@ -37,10 +37,12 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='program',
             name='program_administrator_id',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='cohort_admin', to=settings.AUTH_USER_MODEL),
-        ),
-        migrations.RemoveField(
-            model_name='programuser',
+try:
+    field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='cohort_admin', to=settings.AUTH_USER_MODEL)
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+try:
             name='program',
         ),
         migrations.AddField(

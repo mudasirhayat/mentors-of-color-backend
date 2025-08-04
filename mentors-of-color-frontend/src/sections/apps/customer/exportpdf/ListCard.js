@@ -187,9 +187,10 @@ const ListCard = ({ customer }) => {
                   <View style={styles.IconContainer}>
                     <View style={[styles.row, styles.IconRow]}>
                       <Text style={styles.mainTitle}>Senior UI/UX designer (Year)</Text>
-                      <Text style={styles.iconTitle}>2019-Current</Text>
-                    </View>
-                    <View style={[styles.row, styles.IconRow]}>
+<Text style={styles.iconTitle}>
+  2019-Current
+</Text>
+<View style={[styles.row, styles.IconRow]}>
                       <Text style={styles.mainTitle}>Job Responsibility</Text>
                       <Text style={styles.iconTitle}>
                         Perform task related to project manager with the 100+ team under my observation. Team management is key role in this

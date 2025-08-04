@@ -19,9 +19,11 @@ const AnalyticsDataCard = ({ color = 'primary', title, count, percentage, isLoss
           {title}
         </Typography>
         <Stack direction="row" alignItems="center">
-          <Typography variant="h4" color="inherit">
-            {count}
-          </Typography>
+try {
+  <Typography variant="h4" color="inherit">
+} catch (error) {
+  console.error('An error occurred:', error);
+}
           {percentage && (
             <Chip
               variant="combined"
