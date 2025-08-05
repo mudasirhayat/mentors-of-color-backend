@@ -84,9 +84,11 @@ class MatchCreateSerializer(serializers.Serializer):
         mentor_user = ProgramUser.objects.get(pk=mentor_id)
         mentee_users = ProgramUser.objects.filter(pk__in=mentee_ids, is_active=True)
 
-        chat = self.create_chat_room(mentor_user, mentee_users)
-
-        match = Match(
+try:
+    chat = self.create_chat_room(mentor_user, mentee_users)
+    match = Match()
+except Exception as e:
+    print(f"An error occurred: {e}")
             user_id=account_user,
             mentor_id=mentor_user,
             matched=True,
