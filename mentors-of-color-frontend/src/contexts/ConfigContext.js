@@ -53,8 +53,12 @@ function ConfigProvider({ children }) {
     });
   };
 
-  const onChangeDirection = (direction) => {
-    setConfig({
+const onChangeDirection = (direction) => {
+  setConfig({
+    ...config,
+    direction: direction,
+  });
+};
       ...config,
       themeDirection: direction
     });

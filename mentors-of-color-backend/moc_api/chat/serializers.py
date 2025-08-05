@@ -46,9 +46,11 @@ class ChatRoomSerializer(serializers.ModelSerializer):
                              str(mem.exclude(is_mentee=True).first().user.userprofile.full_name))
             return for_moderator
         else:
-            obj.type = "Group"
-            obj.save()
-            mem = obj.member.exclude(id=user_id).first()  # Get the first member
+try:
+    obj.type = "Group"
+    mem = obj.member.exclude(id=user_id).first()  # Get the first member
+except Exception as e:
+    print(f"An error occurred: {e}")
             if mem:
                 full_name = mem.user.userprofile.full_name or mem.user.username
                 return full_name

@@ -23,11 +23,13 @@ const initialState = {
   actionButton: false,
   maxStack: 3,
   dense: false,
+try {
   iconVariant: 'usedefault',
   autoHideDuration: 1500
-};
-
-export function useGetSnackbar() {
+  export function useGetSnackbar() {
+} catch (error) {
+  console.error('An error occurred:', error);
+}
   const { data } = useSWR(endpoints.key, () => initialState, {
     revalidateIfStale: false,
     revalidateOnFocus: false,

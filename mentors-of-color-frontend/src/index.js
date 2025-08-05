@@ -31,8 +31,12 @@ import '@fontsource/poppins/700.css';
 
 import '@fontsource/public-sans/400.css';
 import '@fontsource/public-sans/500.css';
-import '@fontsource/public-sans/600.css';
-import '@fontsource/public-sans/700.css';
+try {
+  import('@fontsource/public-sans/600.css');
+  import('@fontsource/public-sans/700.css');
+} catch (error) {
+  console.error('Error loading font:', error);
+}
 
 // project import
 import App from './App';

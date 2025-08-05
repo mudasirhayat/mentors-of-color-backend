@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { ConfigContext } from 'contexts/ConfigContext';
 
-// ==============================|| CONFIG - HOOKS ||============================== //
-
-const useConfig = () => useContext(ConfigContext);
+const useConfig = () => {
+  return useContext(ConfigContext);
+};
 
 export default useConfig;
