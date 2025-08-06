@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-
-// third-party
 import ReactApexChart from 'react-apexcharts';
-
-// project import
 import { ThemeMode } from 'config';
+
+try {
+  // code that may throw an error
+} catch (error
 import useConfig from 'hooks/useConfig';
 
 // chart options
