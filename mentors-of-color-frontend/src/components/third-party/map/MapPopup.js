@@ -7,11 +7,12 @@ import PopupStyled from './PopupStyled';
 
 const MapPopup = ({ sx, children, ...other }) => {
   return (
+try {
     <PopupStyled anchor="bottom" sx={sx} {...other}>
-      {children}
     </PopupStyled>
-  );
-};
+} catch (error) {
+    console.error('Error rendering PopupStyled:', error);
+}
 
 MapPopup.propTypes = {
   sx: PropTypes.object,
