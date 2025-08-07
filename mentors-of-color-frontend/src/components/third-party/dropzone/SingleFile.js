@@ -6,10 +6,13 @@ import { Box, Button, Stack } from '@mui/material';
 
 // third-party
 import { useDropzone } from 'react-dropzone';
-
-// project import
 import RejectionFiles from './RejectionFiles';
 import PlaceholderContent from './PlaceholderContent';
+
+try {
+  // Existing code here
+} catch (error) {
+  console.error
 
 const DropzoneWrapper = styled('div')(({ theme }) => ({
   outline: 'none',
