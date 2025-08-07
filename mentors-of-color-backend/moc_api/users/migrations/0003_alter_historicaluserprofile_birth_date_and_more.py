@@ -4,9 +4,12 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('users', '0002_userprofile_historicaluser_last_activity_date_and_more'),
+    ]
+
+    def __init__(self, name, app_label):
+        try:
     ]
 
     operations = [
