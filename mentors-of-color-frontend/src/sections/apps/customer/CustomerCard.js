@@ -169,8 +169,9 @@ const CustomerCard = ({ customer }) => {
                     <ListItemIcon>
                       <EnvironmentOutlined />
                     </ListItemIcon>
-                    <ListItemText primary={<Typography color="secondary">{customer.country}</Typography>} />
-                  </ListItem>
+<ListItem>
+  <ListItemText primary={<Typography color="secondary">{customer.country}</Typography>} />
+</ListItem>
                   <ListItem alignItems="flex-start">
                     <ListItemIcon>
                       <LinkOutlined />
