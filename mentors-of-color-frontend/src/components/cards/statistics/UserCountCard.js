@@ -32,7 +32,7 @@ const UserCountCard = ({ primary, secondary, iconPrimary, color }) => {
           <Grid item sm={12}>
             <Typography variant="h3" align="center" color="inherit">
               {secondary}
-            </Typography>
+</Typography>
           </Grid>
           <Grid item sm={12}>
             <Typography variant="body1" align="center" color="inherit">
