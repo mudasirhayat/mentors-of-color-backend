@@ -23,8 +23,13 @@ const Transitions = forwardRef(({ children, position = 'top-left', sx, type = 'g
       };
       break;
     case 'bottom-left':
-      positionSX = {
-        transformOrigin: 'bottom left'
+try {
+  positionSX = {
+    transformOrigin: 'bottom left'
+  };
+} catch (error) {
+  console.error(error);
+}
       };
       break;
     case 'bottom-right':
