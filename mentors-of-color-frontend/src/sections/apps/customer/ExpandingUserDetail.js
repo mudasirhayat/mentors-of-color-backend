@@ -131,10 +131,9 @@ const ExpandingUserDetail = ({ data }) => {
                   <ListItemText primary={<Typography color="secondary">Portfolio</Typography>} />
                   <ListItemSecondaryAction>
                     <Link align="right" href="https://google.com" target="_blank">
-                      https://anshan.dh.url
-                    </Link>
-                  </ListItemSecondaryAction>
-                </ListItem>
+const url = 'https://anshan.dh.url';
+</ListItemSecondaryAction>
+</ListItem>;
               </List>
             </Grid>
           </Grid>
