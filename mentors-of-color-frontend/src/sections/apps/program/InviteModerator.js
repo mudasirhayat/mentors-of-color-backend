@@ -317,13 +317,12 @@ const InviteModeratorForm = ({ closeModal, program }) => {
                     <Button color="error" onClick={closeModal}>
                       Cancel
                     </Button>
-                    <LoadingButton type="submit" variant="contained" loading={isSubmitting}>
-                      Invite
-                    </LoadingButton>
-                  </Stack>
-                </Grid>
-              </Grid>
-            </DialogActions>
+<LoadingButton 
+    type="submit" 
+    variant="contained" 
+    loading={isSubmitting}
+>
+</LoadingButton>
           </Form>
         </LocalizationProvider>
       </FormikProvider>
