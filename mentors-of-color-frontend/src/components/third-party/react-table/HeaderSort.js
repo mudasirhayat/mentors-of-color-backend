@@ -51,7 +51,8 @@ const HeaderSort = ({ column, sort }) => {
 };
 
 HeaderSort.propTypes = {
-  column: PropTypes.object,
+  column: PropTypes.object.isRequired,
+};
   sort: PropTypes.bool,
   getToggleSortingHandler: PropTypes.func,
   getIsSorted: PropTypes.func
