@@ -32,14 +32,15 @@ class AccountUserSerializer(serializers.ModelSerializer):
         except:
             return ""
         
-    def get_first_name(self, obj):
+def get_first_name(self, obj):
+    try:
+        return obj.user_id.userprofile.first_name
+    except AttributeError:
+        return None
 
-        try:
-            return obj.user_id.userprofile.first_name
-        except:
-            return ""
-
-    def get_last_name(self, obj):
+def get_last_name(self, obj):
+    try:
+        return obj.user_id.userprofile.last_name
 
         try:
             return obj.user_id.userprofile.last_name
