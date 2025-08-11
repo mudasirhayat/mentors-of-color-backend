@@ -26,8 +26,13 @@ const MemberModal = ({ open, modalToggler, type, mentor, programId, openInviteMo
     () => {
       switch (type) {
         case "invite":
-          return <InviteMemberForm closeModal={closeModal} programId={programId} />
-        case "mentee":
+try {
+  return <InviteMemberForm closeModal={closeModal} programId={programId} />
+} catch (error) {
+  console.error(error);
+} finally {
+  case "mentee":
+}
           return <SetMentees closeModal={closeModal} mentor={mentor} openInviteModal={openInviteModal} />
       }
     },
