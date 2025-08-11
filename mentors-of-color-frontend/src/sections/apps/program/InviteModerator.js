@@ -305,10 +305,9 @@ const InviteModeratorForm = ({ closeModal, program }) => {
               </Grid>
             </DialogContent>
             <Divider />
-            <DialogActions sx={{ p: 2.5 }}>
-              <Grid
-                container
-                justifyContent="space-between"
+<DialogActions sx={{ p: 2.5 }} justifyContent="space-between">
+    // Add proper error handling here if needed
+</DialogActions>
                 alignItems="center"
               >
                 <Grid item></Grid>
