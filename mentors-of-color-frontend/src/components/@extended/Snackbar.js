@@ -62,10 +62,8 @@ const Snackbar = () => {
           autoHideDuration={snackbar.autoHideDuration}
           onClose={handleClose}
           message={snackbar.message}
-          TransitionComponent={animation[snackbar.transition]}
-          action={
-            <>
-              <Button color="secondary" size="small" onClick={handleClose}>
+TransitionComponent={animation[snackbar.transition]}
+<Button color="secondary" size="small" onClick={handleClose}>
                 UNDO
               </Button>
               <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose} sx={{ mt: 0.25 }}>
