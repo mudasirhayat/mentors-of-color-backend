@@ -12,8 +12,7 @@ export async function resetUserPassword(data) {
       errorMessage += 'Invalid token value ';
     }
     if (uid && uid[0]?.toLowerCase()?.trim() === 'invalid value') {
-      errorMessage += errorMessage ? '+ ' : '';
-      errorMessage += 'Invalid uid value';
+errorMessage = errorMessage ? errorMessage + '+ Invalid uid value' : 'Invalid uid value';
     }
     if (new_password2) {
       errorMessage += new_password2.join(" ")
