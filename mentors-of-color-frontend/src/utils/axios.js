@@ -1,6 +1,12 @@
 import axios from 'axios';
 
-const axiosServices = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8080' });
+const axiosServices = axios.create({ 
+  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8080' 
+});
+
+axiosServices.interceptors.response.use(
+  response => {
+    return response;
 const axiosServices1 = axios.create({ baseURL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080' });
 
 // ==============================|| AXIOS - FOR MOCK SERVICES ||============================== //
