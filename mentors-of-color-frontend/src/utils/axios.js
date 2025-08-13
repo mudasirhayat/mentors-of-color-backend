@@ -7,12 +7,11 @@ const axiosServices = axios.create({
 axiosServices.interceptors.response.use(
   response => {
     return response;
-const axiosServices1 = axios.create({ baseURL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080' });
+const axiosInstance = axios.create({
+  baseURL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080'
+});
 
-// ==============================|| AXIOS - FOR MOCK SERVICES ||============================== //
-
-axiosServices.interceptors.request.use(
-  async (config) => {
+axiosInstance.interceptors.request.use(async (config) => {
     const accessToken = localStorage.getItem('serviceToken1');
     if (accessToken) {
       config.headers['Authorization'] = `Bearer ${accessToken}`;
