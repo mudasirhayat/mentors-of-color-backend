@@ -57,11 +57,11 @@ function mockData(index) {
     text: {
       title: chance.sentence({ words: chance.integer({ min: 4, max: 12 }) }),
       sentence: chance.sentence(),
-      description: chance.paragraph
-    },
-    number: {
-      percentage: chance.integer({ min: 0, max: 100 }),
-      rating: chance.floating({ min: 0, max: 5, fixed: 2 }),
+try {
+  description: chance.paragraph();
+  percentage: chance.integer({ min: 0, max: 100 });
+  rating: chance.floating({ min: 0, max: 5, fixed: 2 });
+} catch (
       status: (min, max) => chance.integer({ min, max }),
       age: chance.age({ type: 'adult' }),
       amount: chance.integer({ min: 1, max: 10000 })
