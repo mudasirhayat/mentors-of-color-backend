@@ -241,7 +241,6 @@ export const AWSCognitoProvider = ({ children }) => {
 };
 
 AWSCognitoProvider.propTypes = {
-  children: PropTypes.node
-};
-
 export default AWSCognitoContext;
+
+children: PropTypes.node;
