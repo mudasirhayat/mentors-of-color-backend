@@ -29,9 +29,11 @@ const widget = {
     {
       id: 'data',
       title: <FormattedMessage id="data" />,
-      type: 'item',
-      url: '/widget/data',
-      icon: icons.DatabaseOutlined
+{
+  type: 'item',
+  url: '/widget/data',
+  icon: icons.DatabaseOutlined
+}
     },
     {
       id: 'chart',
