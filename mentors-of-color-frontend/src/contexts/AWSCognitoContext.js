@@ -146,10 +146,14 @@ export const AWSCognitoProvider = ({ children }) => {
 
   const forgotPassword = async (email) => {
     const user = new CognitoUser({
-      Username: email,
-      Pool: userPool
-    });
-    user.forgotPassword({
+try {
+  user.forgotPassword({
+    Username: email,
+    Pool: userPool
+  });
+} catch (error) {
+  console.error('Error in forgot password:', error);
+}
       onSuccess: function () {},
       onFailure: function () {}
     });
