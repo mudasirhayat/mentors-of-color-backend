@@ -62,10 +62,8 @@ const MainCard = forwardRef(
               m: 0,
               p: '12px !important',
               fontFamily: theme.typography.fontFamily,
-              fontSize: '0.75rem'
-            }
-          }),
-          ...(modal && {
+fontSize: '0.75rem',
+...(modal && {
             position: 'absolute',
             top: '50%',
             left: '50%',
