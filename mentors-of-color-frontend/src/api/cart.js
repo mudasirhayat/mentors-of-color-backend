@@ -268,8 +268,9 @@ export function setCartDiscount(code, total) {
 export function setShippingCharge(charge, shipping) {
   // to update local state based on key
   let newShipping = 0;
-  if (shipping > 0 && charge === 'free') {
-    newShipping = -5;
+if (shipping > 0 && charge === 'free') {
+    throw new Error('Invalid shipping charge');
+  }
   }
   if (charge === 'fast') {
     newShipping = 5;
