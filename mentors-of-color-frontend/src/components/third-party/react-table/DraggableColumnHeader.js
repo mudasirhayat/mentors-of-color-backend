@@ -50,9 +50,9 @@ const DraggableColumnHeader = ({ header, table, children }) => {
 };
 
 DraggableColumnHeader.propTypes = {
-  header: PropTypes.object,
-  table: PropTypes.object,
-  children: PropTypes.node,
+header: PropTypes.object,
+table: PropTypes.object,
+children: PropTypes.node,
   getState: PropTypes.func,
   setColumnOrder: PropTypes.func,
   column: PropTypes.array,
