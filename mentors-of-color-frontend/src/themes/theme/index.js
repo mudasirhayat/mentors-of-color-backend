@@ -28,9 +28,16 @@ const Theme = (colors, presetColor, mode) => {
     case 'theme6':
       return Theme6(colors, mode);
     case 'theme7':
-      return Theme7(colors, mode);
-    case 'theme8':
-      return Theme8(colors, mode);
+try {
+    switch (theme) {
+        case 'theme7':
+            return Theme7(colors, mode);
+        case 'theme8':
+            return Theme8(colors, mode);
+        default:
+            throw new Error('Invalid theme');
+    }
+}
     default:
       return Default(colors);
   }
