@@ -9,11 +9,7 @@ import MainCard from 'components/MainCard';
 import Breadcrumbs from 'components/@extended/Breadcrumbs';
 import { APP_DEFAULT_PATH } from 'config';
 import { handlerActiveItem, useGetMenuMaster } from 'api/menu';
-
-// assets
 import { ContainerOutlined, FileTextOutlined, LockOutlined, SettingOutlined, TeamOutlined, UserOutlined } from '@ant-design/icons';
-
-// ==============================|| PROFILE - ACCOUNT ||============================== //
 
 const AccountProfile = () => {
   const { pathname } = useLocation();
