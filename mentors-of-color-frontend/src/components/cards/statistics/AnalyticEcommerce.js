@@ -51,9 +51,7 @@ const AnalyticEcommerce = ({ color = 'primary', title, count, percentage, isLoss
         this year
       </Typography>
     </Box>
-  </MainCard>
-);
-
+</MainCard>;
 AnalyticEcommerce.propTypes = {
   title: PropTypes.string,
   count: PropTypes.string,
