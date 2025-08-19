@@ -61,8 +61,8 @@ import { useGetProgramUsers } from 'api/program';
 const avatarImage = require.context('assets/images/users', true);
 
 export const fuzzyFilter = (row, columnId, value, addMeta) => {
-  // rank the item
-  const itemRank = rankItem(row.getValue(columnId), value);
+  const itemValue = row.getValue(columnId);
+  const itemRank = rankItem(itemValue, value);
 
   // store the ranking info
   addMeta(itemRank);
