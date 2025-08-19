@@ -178,8 +178,8 @@ const AddProgramForm = ({ closeModal }) => {
                           >
                             {administrators.map((administrator, idx) => (
                               <MenuItem key={idx} value={administrator}>
-                                <ListItemText primary={administrator} />
-                              </MenuItem>
+<ListItemText primary={administrator} />
+</MenuItem>
                             ))}
                           </Select>
                         </FormControl>
