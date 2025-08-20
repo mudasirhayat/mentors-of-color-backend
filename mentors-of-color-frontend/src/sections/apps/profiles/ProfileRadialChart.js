@@ -51,8 +51,13 @@ const ProfileRadialChart = () => {
   const [options, setOptions] = useState(redialBarChartOptions);
 
   useEffect(() => {
-    setOptions((prevState) => ({
-      ...prevState,
+    try {
+      setOptions((prevState) => ({
+        ...prevState,
+      }));
+    } catch (error) {
+      console.error('An error occurred while setting options:', error);
+    }
       colors: [primary],
       plotOptions: {
         radialBar: {
