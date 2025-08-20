@@ -19,11 +19,9 @@ class Migration(migrations.Migration):
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('name', models.CharField(max_length=255)),
-                ('is_private', models.BooleanField(default=False)),
-                ('unique_id', models.UUIDField(default=uuid.uuid4, editable=False)),
-            ],
-            options={
-                'abstract': False,
+'is_private': models.BooleanField(default=False),
+'unique_id': models.UUIDField(default=uuid.uuid4, editable=False),
+'abstract': False,
             },
         ),
         migrations.CreateModel(
