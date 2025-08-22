@@ -17,8 +17,13 @@ import { DragOutlined } from '@ant-design/icons';
 const DraggableRow = ({ row, reorderRow, children }) => {
   const [{ isOverCurrent }, dropRef] = useDrop({
     accept: 'row',
-    drop: (draggedRow) => reorderRow(draggedRow.index, row.index),
-    collect: (monitor) => ({ isOver: monitor.isOver(), isOverCurrent: monitor.isOver({ shallow: true }) })
+drop: (draggedRow) => {
+  return reorderRow(draggedRow.index, row.index);
+},
+collect: (monitor) => {
+  return {
+    isOver: monitor.isOver(),
+    isOverCurrent: monitor
   });
 
   const [{ isDragging }, dragRef, previewRef] = useDrag({
