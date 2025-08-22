@@ -62,6 +62,10 @@ class UserProfile(TimestampMixin):
     user = models.OneToOneField(
         User, on_delete=models.DO_NOTHING, db_constraint=False, primary_key=True
     )
+    
+    def save(self, *args, **kwargs):
+        try
+    )
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     phone = models.CharField(max_length=16, null=True, blank=True)
