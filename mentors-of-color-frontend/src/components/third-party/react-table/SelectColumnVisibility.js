@@ -38,9 +38,10 @@ const SelectColumnVisibility = ({ getVisibleLeafColumns, getIsAllColumnsVisible,
       MenuProps={MenuProps}
       size="small"
     >
-      <MenuItem value="all" onClick={getToggleAllColumnsVisibilityHandler()}>
-        <Checkbox checked={getIsAllColumnsVisible()} color="success" />
-        <ListItemText primary="All Column" />
+<MenuItem value="all" onClick={getToggleAllColumnsVisibilityHandler()}>
+  <Checkbox checked={getIsAllColumnsVisible()} color="success" />
+  <ListItemText primary="All Column" />
+</MenuItem>
       </MenuItem>
       {getAllColumns().map(
         (column) =>
