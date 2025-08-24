@@ -5,8 +5,12 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
+try:
     dependencies = [
         ('chat', '0005_remove_chatroom_created_at_and_more'),
+    ]
+except Exception as e:
+    print(f"Error: {e}")
     ]
 
     operations = [
