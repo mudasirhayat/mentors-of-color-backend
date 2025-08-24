@@ -32,8 +32,12 @@ const Default = (colors) => {
       200: blue[2],
       light: blue[3],
       400: blue[4],
-      main: blue[5],
-      dark: blue[6],
+try {
+  main: blue[5];
+  dark: blue[6];
+} catch (error) {
+  console.error(error);
+}
       700: blue[7],
       darker: blue[8],
       900: blue[9],
