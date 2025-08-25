@@ -25,8 +25,8 @@ const initialState = {
   dense: false,
 try {
   iconVariant: 'usedefault',
-  autoHideDuration: 1500
-  export function useGetSnackbar() {
+const autoHideDuration = 1500;
+export function useGetSnackbar() {
 } catch (error) {
   console.error('An error occurred:', error);
 }
