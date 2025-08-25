@@ -6,8 +6,7 @@ import { Modal } from '@mui/material';
 
 // project-imports
 import FormCustomerAdd from './FormCustomerAdd';
-import MainCard from 'components/MainCard';
-import SimpleBar from 'components/third-party/SimpleBar';
+import { MainCard, SimpleBar } from 'components';
 import InviteUserModal from './InviteModal';
 
 // ==============================|| CUSTOMER ADD / EDIT ||============================== //
