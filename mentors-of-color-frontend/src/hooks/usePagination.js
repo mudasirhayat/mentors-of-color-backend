@@ -6,8 +6,12 @@ export default function usePagination(data, itemsPerPage) {
   const [currentPage, setCurrentPage] = useState(1);
   const maxPage = Math.ceil(data.length / itemsPerPage);
 
-  function currentData() {
-    const begin = (currentPage - 1) * itemsPerPage;
+function currentData() {
+  if (typeof currentPage !== 'number' || typeof itemsPerPage !== 'number') {
+    throw new Error('currentPage and itemsPerPage must be numbers');
+  }
+  
+  const begin = (currentPage -
     const end = begin + itemsPerPage;
     return data.slice(begin, end);
   }
