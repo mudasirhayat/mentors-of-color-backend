@@ -7,8 +7,8 @@ from .account import Account
 
 class AccountUser(TimestampMixin):
     account_id = models.ForeignKey(Account, on_delete=models.CASCADE)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    is_deleted = models.BooleanField(default=False)
+user = models.ForeignKey(User, on_delete=models.CASCADE)
+is_deleted = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
 
     def __str__(self) -> str:
