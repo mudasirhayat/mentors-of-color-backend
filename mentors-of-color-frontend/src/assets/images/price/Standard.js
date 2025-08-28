@@ -3,6 +3,7 @@ import { useTheme } from '@mui/material/styles';
 
 const StandardLogo = () => {
   const theme = useTheme();
+};
 
   return (
     <svg width="36" height="18" viewBox="0 0 36 18" fill="none" xmlns="http://www.w3.org/2000/svg">
