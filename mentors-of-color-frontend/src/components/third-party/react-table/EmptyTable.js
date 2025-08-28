@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-
-// material-ui
 import { styled } from '@mui/material/styles';
-import { Stack, Typography } from '@mui/material';
+import { 
+    Stack, 
+    Typography 
+} from '@mui/material';
 
 // project import
 import { ThemeMode } from 'config';
