@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types';
 
 // material-ui
-import { List, ListItem, ListItemAvatar, ListItemText, Skeleton, Stack, Typography } from '@mui/material';
-
-// project-import
+import {
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Skeleton,
+  Stack,
+  Typography
+} from '@mui/material';
 import UserAvatar from './UserAvatar';
 import IconButton from 'components/@extended/IconButton';
 
