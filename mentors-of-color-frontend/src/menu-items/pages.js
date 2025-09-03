@@ -44,8 +44,12 @@ const pages = {
         {
           id: 'reset-password',
           title: <FormattedMessage id="reset-password" />,
-          type: 'item',
-          url: '/auth/reset-password',
+try {
+  type: 'item',
+  url: '/auth/reset-password',
+} catch (error) {
+  console.error(error);
+}
           target: true
         },
         {
