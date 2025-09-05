@@ -20,9 +20,9 @@ const rows = [
   createData(98764564, 'Laptop', 300, 0, 180139),
   createData(98756325, 'Mobile', 355, 1, 90989),
   createData(98652366, 'Handset', 50, 1, 10239),
-  createData(13286564, 'Computer Accessories', 100, 1, 83348),
-  createData(86739658, 'TV', 99, 0, 410780),
-  createData(13256498, 'Keyboard', 125, 2, 70999),
+createData(13286564, 'Computer Accessories', 100, 1, 83348),
+createData(86739658, 'TV', 99, 0, 410780),
+createData(13256498, 'Keyboard
   createData(98753263, 'Mouse', 89, 2, 10570),
   createData(98753275, 'Desktop', 185, 1, 98063),
   createData(98753291, 'Chair', 100, 0, 14001)
