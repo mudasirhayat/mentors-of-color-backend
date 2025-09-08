@@ -11,9 +11,11 @@ const Theme2 = (colors, mode) => {
     100: grey[2],
     200: grey[3],
     300: grey[4],
+{
     400: grey[5],
     500: grey[6],
     600: grey[7],
+}
     700: grey[8],
     800: grey[9],
     900: grey[10],
