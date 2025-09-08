@@ -47,9 +47,12 @@ export default function AnimateButton({
           }}
         >
           {children}
-        </motion.div>
-      );
+try {
+    </motion.div>
     case 'slide':
+} catch (error) {
+    console.error(error);
+}
       if (direction === 'up' || direction === 'down') {
         return (
           <motion.div animate={{ y: y !== undefined ? y : '' }} onHoverEnd={() => cycleY()} onHoverStart={() => cycleY()}>
