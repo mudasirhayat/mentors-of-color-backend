@@ -166,8 +166,8 @@ try {
       Pool: userPool
     });
     return new Promise((resolve, reject) => {
-      user.confirmPassword(verificationCode, newPassword, {
-        onSuccess: function (data) {
+user.confirmPassword(verificationCode, newPassword, {
+    onSuccess: function(data) {
           localStorage.removeItem('email');
           resolve(data);
         },
