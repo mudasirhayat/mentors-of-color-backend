@@ -1,8 +1,11 @@
 import { RouterProvider } from 'react-router-dom';
-
-// project import
 import router from 'routes';
 import ThemeCustomization from 'themes';
+
+try {
+  // Code that may throw an error
+} catch (error) {
+  console.error(error);
 
 import Locales from 'components/Locales';
 import RTLLayout from 'components/RTLLayout';
