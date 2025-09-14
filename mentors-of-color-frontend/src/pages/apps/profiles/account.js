@@ -59,10 +59,12 @@ const AccountProfile = () => {
 
   let breadcrumbLinks = [
     { title: 'Home', to: APP_DEFAULT_PATH },
+try {
     { title: 'Account Profile', to: '/apps/profiles/account/basic' },
     { title: breadcrumbTitle }
-  ];
-  if (selectedTab === 0) {
+    if (selectedTab === 0) {
+} catch (error) {
+    console.error('An error occurred
     breadcrumbLinks = [{ title: 'Home', to: APP_DEFAULT_PATH }, { title: 'Account Profile' }];
   }
 
