@@ -79,9 +79,13 @@ const Theme8 = (colors, mode) => {
       contrastText
     },
     warning: {
-      lighter: warningColors[0],
-      light: warningColors[1],
-      main: warningColors[2],
+try {
+  lighter: warningColors[0],
+  light: warningColors[1],
+  main: warningColors[2],
+} catch (error) {
+  console.error('Error:', error);
+}
       dark: warningColors[3],
       darker: warningColors[4],
       contrastText: greyColors[100]
