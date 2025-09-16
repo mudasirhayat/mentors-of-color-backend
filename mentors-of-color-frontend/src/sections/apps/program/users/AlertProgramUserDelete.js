@@ -15,7 +15,7 @@ import { deleteProgramUser } from 'api/program';
 // ==============================|| CUSTOMER - DELETE ||============================== //
 
 export default function AlertProgramUserDelete({ id, programId, title, open, handleClose }) {
-  const deletehandler = async () => {
+  const handleDelete = async () => {
     await deleteProgramUser(programId, id).then(() => {
       openSnackbar({
         open: true,
