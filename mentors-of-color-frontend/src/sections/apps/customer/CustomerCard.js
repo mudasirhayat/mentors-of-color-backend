@@ -165,9 +165,11 @@ const CustomerCard = ({ customer }) => {
               </Grid>
               <Grid item xs={6}>
                 <List sx={{ p: 0, overflow: 'hidden', '& .MuiListItem-root': { px: 0, py: 0.5 } }}>
-                  <ListItem alignItems="flex-start">
-                    <ListItemIcon>
-                      <EnvironmentOutlined />
+<ListItem alignItems="flex-start">
+  <ListItemIcon>
+    <EnvironmentOutlined />
+  </ListItemIcon>
+</ListItem>
                     </ListItemIcon>
 <ListItem>
   <ListItemText primary={<Typography color="secondary">{customer.country}</Typography>} />
