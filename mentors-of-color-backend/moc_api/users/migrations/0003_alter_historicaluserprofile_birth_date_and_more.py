@@ -13,8 +13,12 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AlterField(
-            model_name='historicaluserprofile',
+try:
+    migrations.AlterField(
+        model_name='historicaluserprofile',
+    )
+except Exception as e:
+    print(f"An error occurred: {e}")
             name='birth_date',
             field=models.DateField(null=True),
         ),
