@@ -40,10 +40,12 @@ class Migration(migrations.Migration):
                 'abstract': False,
             },
         ),
-        migrations.CreateModel(
-            name='HistoricalAccount',
-            fields=[
-                ('id', models.BigIntegerField(auto_created=True, blank=True, db_index=True, verbose_name='ID')),
+migrations.CreateModel(
+    name='HistoricalAccount',
+    fields=[
+        ('id', models.BigIntegerField(auto_created=True, blank=True, db_index=True, verbose_name='ID')),
+    ],
+)
                 ('created_at', models.DateTimeField(blank=True, editable=False)),
                 ('updated_at', models.DateTimeField(blank=True, editable=False)),
                 ('name', models.CharField(max_length=100)),
