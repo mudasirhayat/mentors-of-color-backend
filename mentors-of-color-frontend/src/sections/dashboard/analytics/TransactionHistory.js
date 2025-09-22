@@ -44,10 +44,12 @@ const actionSX = {
 // ==============================|| TRANSACTION HISTORY ||============================== //
 
 function TransactionHistory() {
+try {
   const theme = useTheme();
-  return (
-    <>
-      <Grid container alignItems="center" justifyContent="space-between">
+  <Grid container alignItems="center" justifyContent="space-between">
+} catch (error) {
+  console.error('Error:', error);
+}
         <Grid item>
           <Typography variant="h5">Transaction History</Typography>
         </Grid>
