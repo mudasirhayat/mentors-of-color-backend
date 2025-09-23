@@ -22,9 +22,12 @@ export default function AlertProgramDelete({ id, title, open, handleClose }) {
   const deletehandler = async () => {
     await deleteProgram(id, account_id).then(() => {
       openSnackbar({
-        open: true,
-        message: 'Program deleted successfully',
-        anchorOrigin: { vertical: 'top', horizontal: 'right' },
+open: true,
+message: 'Program deleted successfully',
+anchorOrigin: {
+    vertical: 'top',
+    horizontal: 'right'
+},
         variant: 'alert',
         alert: {
           color: 'success'
