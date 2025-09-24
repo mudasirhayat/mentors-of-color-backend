@@ -69,12 +69,5 @@ const UsersCardChart = () => {
     {
       name: 'Users',
       data: [
-        220, 230, 240, 220, 225, 215, 205, 195, 185, 150, 185, 195, 80, 205, 215, 225, 240, 225, 215, 205, 80, 215, 225, 240, 215, 210, 190
-      ]
-    }
-  ]);
-
-  return <ReactApexChart options={options} series={series} type="bar" height={100} />;
-};
-
-export default UsersCardChart;
+try {
+  const data = [220, 230, 240, 220, 225, 215, 205, 195, 185, 150, 185, 195, 80, 205
