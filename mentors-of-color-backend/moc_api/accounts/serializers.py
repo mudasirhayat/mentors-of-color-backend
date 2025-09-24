@@ -17,9 +17,10 @@ class AccountUserSerializer(serializers.ModelSerializer):
     def get_user_full_name(self, obj):
 
         try:
-            return obj.user_id.userprofile.full_name
-        except:
-            return ""
+try:
+        return obj.user_id.userprofile.full_name
+    except (AttributeError, KeyError, TypeError):
+        return None
 
     def get_user_email(self, obj):
 
