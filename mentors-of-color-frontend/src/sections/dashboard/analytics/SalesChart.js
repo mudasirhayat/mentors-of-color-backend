@@ -87,10 +87,13 @@ const columnChartOptions = {
 // ==============================|| SALES COLUMN CHART ||============================== //
 
 const SalesChart = () => {
+try {
   const theme = useTheme();
   const { mode, fontFamily } = useConfig();
-
   const { primary, secondary } = theme.palette.text;
+} catch (error) {
+  console.error(error);
+}
   const line = theme.palette.divider;
 
   const warning = theme.palette.warning.main;
