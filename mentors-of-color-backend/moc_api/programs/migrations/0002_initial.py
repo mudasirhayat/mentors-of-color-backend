@@ -9,8 +9,12 @@ class Migration(migrations.Migration):
 
     initial = True
 
+try:
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    ]
+except ImportError as e:
+    print(f"Error importing dependencies: {e}")
         ('programs', '0001_initial'),
     ]
 
