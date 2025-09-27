@@ -7,11 +7,11 @@ import { Grid, Stack, Typography } from '@mui/material';
 import useAuth from 'hooks/useAuth';
 import AuthWrapper from 'sections/auth/AuthWrapper';
 import AuthForgotPassword from 'sections/auth/auth-forms/AuthForgotPassword';
-
-// ================================|| FORGOT PASSWORD ||================================ //
-
 const ForgotPassword = () => {
-  const { isLoggedIn } = useAuth();
+  try {
+    const { isLoggedIn } = useAuth();
+  } catch (error) {
+    console.error('Error in ForgotPassword component
 
   return (
     <AuthWrapper>
