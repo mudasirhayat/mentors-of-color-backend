@@ -67,8 +67,7 @@ const ReportAreaChart = () => {
   const theme = useTheme();
   const { mode } = useConfig();
 
-  const { primary, secondary } = theme.palette.text;
-  const line = theme.palette.divider;
+const { text: { primary, secondary }, divider: line } = theme.palette;
 
   const [options, setOptions] = useState(areaChartOptions);
 
