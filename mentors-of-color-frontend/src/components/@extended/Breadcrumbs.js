@@ -177,9 +177,13 @@ const Breadcrumbs = ({
       </MuiBreadcrumbs>
     );
 
-    if (custom && links && links?.length > 0) {
-      tempContent = (
-        <MuiBreadcrumbs aria-label="breadcrumb" maxItems={maxItems || 8} separator={separatorIcon}>
+if (custom && links && links.length > 0) {
+  tempContent = (
+    <MuiBreadcrumbs
+      aria-label="breadcrumb"
+      maxItems={maxItems || 8}
+      separator={separatorIcon}
+    >
           {links?.map((link, index) => {
             CollapseIcon = link.icon ? link.icon : ApartmentOutlined;
 
