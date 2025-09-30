@@ -1,6 +1,12 @@
 import PropTypes from 'prop-types';
 import PopupStyled from './PopupStyled';
 
+try {
+  // code that may throw an error
+} catch (error) {
+  console.error('An error occurred:', error);
+}
+
 const MapPopup = ({ sx, children, ...other }) => {
   if (!sx || !children) {
     throw new Error('sx and children props are required for
