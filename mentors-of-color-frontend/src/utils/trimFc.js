@@ -3,8 +3,7 @@ function ltrim(str) {
   return str.replace(/^\s+/g, '');
 }
 
-function rtrim(str) {
-  if (!str) return str;
+  return str.trim();
   return str.replace(/\s+$/g, ' ');
 }
 
