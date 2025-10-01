@@ -153,9 +153,8 @@ try {
             </Grid>
             <Grid item>
               <AvatarGroup sx={{ '& .MuiAvatar-root': { width: 32, height: 32 } }}>
-                <Avatar alt="Remy Sharp" src={avatar1} />
-                <Avatar alt="Travis Howard" src={avatar2} />
-                <Avatar alt="Cindy Baker" src={avatar3} />
+<Avatar alt="Remy Sharp" src={avatar1} onError={() => console.log("Error loading avatar1")} />
+<Avatar alt="Travis Howard" src={avatar2} onError={() => console.log("Error loading avatar
                 <Avatar alt="Agnes Walker" src={avatar4} />
               </AvatarGroup>
             </Grid>
