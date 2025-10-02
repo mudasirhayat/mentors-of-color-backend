@@ -109,8 +109,9 @@ const TabPassword = () => {
                       name="old"
                       onBlur={handleBlur}
                       onChange={handleChange}
-                      endAdornment={
-                        <InputAdornment position="end">
+endAdornment={
+  <InputAdornment position="end">
+}
                           <IconButton
                             aria-label="toggle password visibility"
                             onClick={handleClickShowOldPassword}
