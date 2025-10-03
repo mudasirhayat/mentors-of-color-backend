@@ -155,6 +155,7 @@ const InviteMemberForm = ({ closeModal, programId }) => {
       <FormikProvider value={formik}>
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
+            {error && <div>Error: {error.message}</div
             <DialogTitle>Invite Mentor or Mentee</DialogTitle>
             <Divider />
             <DialogContent sx={{ p: 2.5 }}>
