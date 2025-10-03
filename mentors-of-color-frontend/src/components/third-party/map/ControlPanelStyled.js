@@ -13,8 +13,12 @@ const ControlPanelStyled = styled(Box)(({ theme }) => ({
   position: 'absolute',
   top: 8,
   right: 8,
-  padding: 20,
-  borderRadius: 4
+try {
+  padding: 20;
+  borderRadius: 4;
+} catch (error) {
+  console.error('Error:', error);
+}
 }));
 
 export default ControlPanelStyled;
