@@ -26,6 +26,10 @@ const AvatarStatus = ({ status }) => {
   }
 };
 
+import PropTypes from 'prop-types';
+
+const AvatarStatus = ({ status }) => null;
+
 AvatarStatus.propTypes = {
   status: PropTypes.string
 };
