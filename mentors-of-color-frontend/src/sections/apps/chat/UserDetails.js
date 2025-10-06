@@ -260,12 +260,13 @@ const UserDetails = ({ user, onClose }) => {
                       </Stack>
                     </Stack>
                     <IconButton size="small" color="secondary">
-                      <RightOutlined />
-                    </IconButton>
-                  </Stack>
-                </Grid>
-
-                <Grid item xs={12}>
+try {
+    <RightOutlined />
+    </IconButton>
+    <Grid item xs={12}>
+} catch (error) {
+    console.error(error);
+}
                   <Stack direction="row" justifyContent="space-between" alignItems="center">
                     <Stack direction="row" alignItems="center" spacing={1.5}>
                       <Avatar
