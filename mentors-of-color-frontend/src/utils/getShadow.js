@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 // ==============================|| CUSTOM FUNCTION - COLOR SHADOWS ||============================== //
 
 const getShadow = (theme, shadow) => {
-  switch (shadow) {
-    case 'secondary':
-      return theme.customShadows.secondary;
+if (shadow === 'secondary') {
+  return theme.customShadows.secondary;
+}
     case 'error':
       return theme.customShadows.error;
     case 'warning':
