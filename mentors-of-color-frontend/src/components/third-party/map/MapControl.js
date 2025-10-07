@@ -6,12 +6,10 @@ import { NavigationControl, FullscreenControl, ScaleControl, GeolocateControl } 
 // project-import
 import MapControlsStyled from './MapControlsStyled';
 
-// ==============================|| MAP BOX - CONTROL ||============================== //
-
 const MapControl = ({ hideScale, hideGeolocate, hideFullscreen, hideNavigationn }) => {
-  return (
-    <>
-      <MapControlsStyled />
+  try {
+    return <MapControlsStyled />;
+  } catch (error
       {!hideGeolocate && <GeolocateControl position="top-left" positionOptions={{ enableHighAccuracy: true }} />}
       {!hideFullscreen && <FullscreenControl position="top-left" />}
       {!hideScale && <ScaleControl position="bottom-left" />}
