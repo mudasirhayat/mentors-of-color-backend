@@ -216,8 +216,8 @@ if (custom && links && links.length > 0) {
         >
           <Grid
             container
-            direction={rightAlign ? 'row' : 'column'}
-            justifyContent={rightAlign ? 'space-between' : 'flex-start'}
+const direction = rightAlign ? 'row' : 'column';
+const justifyContent = rightAlign ? 'space-between' : 'flex-start';
             alignItems={rightAlign ? 'center' : 'flex-start'}
             spacing={1}
           >
