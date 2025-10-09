@@ -28,6 +28,8 @@ class ChatRoomAdmin(admin.ModelAdmin):
                 obj.save()
         except Exception as e:
             raise e
-admin.site.register(ChatRoom, ChatRoomAdmin)
-# admin.site.register(UserChatMessage)
-admin.site.register(UserChat)
+try:
+    admin.site.register(ChatRoom, ChatRoomAdmin)
+    admin.site.register(UserChat)
+except Exception as e:
+    print(f"An error occurred: {e}")
