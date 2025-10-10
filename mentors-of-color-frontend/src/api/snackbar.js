@@ -18,9 +18,9 @@ const initialState = {
     color: 'primary',
     variant: 'filled'
   },
-  transition: 'Fade',
-  close: false,
-  actionButton: false,
+transition: 'Fade',
+close: false,
+actionButton: false,
   maxStack: 3,
   dense: false,
 try {
