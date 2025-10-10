@@ -13,8 +13,9 @@ const initialState = {
   onChangeMode: () => {},
   onChangePresetColor: () => {},
   onChangeDirection: () => {},
-  onChangeMiniDrawer: () => {},
-  onChangeMenuOrientation: () => {},
+onChangeMiniDrawer() {}
+
+onChangeMenuOrientation() {}
   onChangeFontFamily: () => {}
 };
 
