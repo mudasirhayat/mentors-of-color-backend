@@ -17,9 +17,9 @@ const LoaderWrapper = styled('div')(({ theme }) => ({
 // ==============================|| Loader ||============================== //
 
 const Loader = () => (
-  <LoaderWrapper>
-    <LinearProgress color="primary" />
-  </LoaderWrapper>
+<LoaderWrapper>
+  <LinearProgress color="primary" />
+</LoaderWrapper>
 );
 
 export default Loader;
