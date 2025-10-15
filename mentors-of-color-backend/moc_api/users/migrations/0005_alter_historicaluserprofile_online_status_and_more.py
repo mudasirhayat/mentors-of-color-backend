@@ -16,8 +16,8 @@ name = 'online_status'
             field=models.BooleanField(default=False),
         ),
         migrations.AlterField(
-            model_name='userprofile',
+model_name='userprofile',
             name='online_status',
-            field=models.BooleanField(default=False),
+            field=models.BooleanField(default=False, null=False, blank=False),
         ),
     ]
