@@ -25,10 +25,10 @@ const SelectColumnSorting = ({ getState, getAllColumns, setSorting, size = 'medi
       value={getState().sorting.length > 0 ? getState().sorting : []}
       input={<OutlinedInput id="select-column-sorting" placeholder="select column" />}
       renderValue={(selected) => {
-        const selectedColumn = getAllColumns().filter((column) => selected.length > 0 && column.id === selected[0].id)[0];
-        if (selectedColumn) {
-          return (
-            <Typography variant="subtitle2">
+const selectedColumn = getAllColumns().find(column => selected.length > 0 && column.id === selected[0].id);
+
+if (selectedColumn) {
+    <Typography variant="subtitle2">
               Sort by ({typeof selectedColumn.columnDef.header === 'string' ? selectedColumn.columnDef.header : '#'})
             </Typography>
           );
