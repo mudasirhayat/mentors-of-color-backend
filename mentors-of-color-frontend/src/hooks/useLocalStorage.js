@@ -23,8 +23,11 @@ export default function useLocalStorage(key, defaultValue) {
 
   const setValueInLocalStorage = (newValue) => {
     setValue((currentValue) => {
-      const result = typeof newValue === 'function' ? newValue(currentValue) : newValue;
-      if (typeof window !== 'undefined') localStorage.setItem(key, JSON.stringify(result));
+try {
+  const result = typeof newValue === 'function' ? newValue(currentValue) : newValue;
+  if (typeof window !== 'undefined') localStorage.setItem(key, JSON.stringify(result));
+} catch (error) {
+  console.error('An error occurred
       return result;
     });
   };
