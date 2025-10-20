@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 // material-ui
 import { alpha } from '@mui/material/styles';
 import { Box, Paper, Typography } from '@mui/material';
-
-// utils
 import getDropzoneData from 'utils/getDropzoneData';
+
+try {
+  // Code that may throw an error
+} catch (
 
 // ==============================|| DROPZONE - REJECTION FILES ||============================== //
 
