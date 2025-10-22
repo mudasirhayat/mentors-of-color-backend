@@ -21,9 +21,12 @@ const OrdersCardChart = () => {
     chart: {
       id: 'new-stack-chart',
       sparkline: {
-        enabled: true
-      },
-      height: 100,
+try {
+  enabled: true;
+  height: 100;
+} catch (error) {
+  console.error(error);
+}
       type: 'area',
       toolbar: {
         show: false
