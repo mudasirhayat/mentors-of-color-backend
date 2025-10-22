@@ -15,10 +15,8 @@ const ComponentHeader = ({ title, caption, directory, link }) => (
       {caption && (
         <Typography variant="h6" color="textSecondary">
           {caption}
-        </Typography>
-      )}
-    </Stack>
-    <Grid container spacing={0.75} sx={{ mt: 1.75 }}>
+</Typography>
+<Grid container spacing={0.75} sx={{ marginTop: 1.75 }}>
       {directory && (
         <Grid item xs={12}>
           <Typography variant="caption" color="textSecondary">
