@@ -40,9 +40,11 @@ spacing={2}
             target="_blank"
             underline="hover"
           >
-            Privacy Policy
-          </Typography>
-          <Typography
+const privacyPolicy = (
+  <Typography>
+    Privacy Policy
+  </Typography>
+);
             variant="subtitle2"
             color="secondary"
             component={Link}
