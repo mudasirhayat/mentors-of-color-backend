@@ -22,10 +22,13 @@ except ImportError as e:
         migrations.AddField(
             model_name='programuser',
             name='user',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),
-        ),
-        migrations.AddField(
-            model_name='program',
+field = models.ForeignKey(
+    on_delete=django.db.models.deletion.CASCADE,
+    to=settings.AUTH_USER_MODEL,
+)
+
+migrations.AddField(
+    model_name='program',
             name='program_administrator_id',
             field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, related_name='cohort_admin', to=settings.AUTH_USER_MODEL),
         ),
