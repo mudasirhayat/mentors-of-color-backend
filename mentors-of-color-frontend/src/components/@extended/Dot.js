@@ -5,6 +5,8 @@ import { Box } from '@mui/material';
 try {
   // Code that may throw an error
 } catch (error) {
+  console.error(error);
+}
   console.error
 
 // project import
