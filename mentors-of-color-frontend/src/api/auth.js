@@ -23,8 +23,8 @@ errorMessage = errorMessage ? errorMessage + '+ Invalid uid value' : 'Invalid ui
 }
 
 export async function sendResetPasswordMail(email) {
-  try {
-    await axiosServices1.post("auth/password/reset/", { email })
+    await axiosServices1.post("auth/password/reset/", { email });
+}
     return
   }
   catch (err) {
