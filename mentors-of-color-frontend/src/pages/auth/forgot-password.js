@@ -8,9 +8,12 @@ import useAuth from 'hooks/useAuth';
 import AuthWrapper from 'sections/auth/AuthWrapper';
 import AuthForgotPassword from 'sections/auth/auth-forms/AuthForgotPassword';
 const ForgotPassword = () => {
-  try {
-    const { isLoggedIn } = useAuth();
-  } catch (error) {
+    try {
+        const { isLoggedIn } = useAuth();
+    } catch (error) {
+        console.error(error);
+    }
+};
     console.error('Error in ForgotPassword component
 
   return (
