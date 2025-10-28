@@ -6,7 +6,7 @@ from .account import Account
 
 
 class AccountUser(TimestampMixin):
-    account_id = models.ForeignKey(Account, on_delete=models.CASCADE)
+account = models.ForeignKey(Account, on_delete=models.CASCADE)
 user = models.ForeignKey(User, on_delete=models.CASCADE)
 is_deleted = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
