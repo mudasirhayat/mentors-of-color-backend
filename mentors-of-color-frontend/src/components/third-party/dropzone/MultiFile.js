@@ -114,8 +114,8 @@ const MultiFileUpload = ({ error, showList = false, files, setFieldValue, sx, ty
 
 MultiFileUpload.propTypes = {
   error: PropTypes.bool,
-  showList: PropTypes.bool,
-  files: PropTypes.array,
+showList: PropTypes.bool,
+files: PropTypes.array,
   setFieldValue: PropTypes.func,
   onUpload: PropTypes.func,
   sx: PropTypes.object,
