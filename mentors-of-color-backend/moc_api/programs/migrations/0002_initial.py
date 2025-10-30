@@ -21,9 +21,9 @@ except ImportError as e:
     operations = [
         migrations.AddField(
             model_name='programuser',
-            name='user',
+name = 'user'
 field = models.ForeignKey(
-    on_delete=django.db.models.deletion.CASCADE,
+    on_delete = django.db.models.deletion.CASCADE,
     to=settings.AUTH_USER_MODEL,
 )
 
