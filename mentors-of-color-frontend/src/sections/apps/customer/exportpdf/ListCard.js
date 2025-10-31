@@ -88,10 +88,12 @@ const styles = StyleSheet.create({
   },
   mainTitle: {
     fontSize: '11px',
-    color: textSecondary
-  },
-  chip: {
-    border: `1px solid ${textSecondary}`,
+try {
+    color: textSecondary;
+    border: `1px solid ${textSecondary}`;
+} catch (error) {
+    console.error(error);
+}
     alignItems: 'center',
     borderRadius: '4px',
     marginRight: 4,
