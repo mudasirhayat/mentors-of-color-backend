@@ -87,10 +87,9 @@ const onChangeDirection = (direction) => {
   };
 
   return (
-    <ConfigContext.Provider
-      value={{
-        ...config,
-        onChangeContainer,
+<ConfigContext.Provider
+    value={{ onChangeContainer: onChangeContainer || (() => {}) }}
+>
         onChangeLocalization,
         onChangeMode,
         onChangePresetColor,
