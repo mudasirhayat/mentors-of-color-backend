@@ -8,10 +8,9 @@ class Migration(migrations.Migration):
 
     dependencies = [
 ('chat', '0007_userchat_chat_room_id_alter_chatroom_member'),
-    ('programs', '0007_alter_match_moderator_id'),
-]
+('programs', '0007_alter_match_moderator_id'),
 operations = [
-        migrations.AddField(
+    migrations.AddField(
             model_name='match',
             name='chat',
             field=models.OneToOneField(null=True, on_delete=django.db.models.deletion.CASCADE, to='chat.chatroom'),
