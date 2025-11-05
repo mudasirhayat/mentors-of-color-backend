@@ -2,9 +2,14 @@ import { useEffect, useState } from 'react';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Chip, MenuItem, Select, Slider, Stack, TextField } from '@mui/material';
-
-// third-party
+import {
+  Chip,
+  MenuItem,
+  Select,
+  Slider,
+  Stack,
+  TextField
+} from '@mui/material';
 import * as yup from 'yup';
 import { Formik, Form } from 'formik';
 
