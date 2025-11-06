@@ -28,7 +28,13 @@ collect: (monitor) => {
 
   const [{ isDragging }, dragRef, previewRef] = useDrag({
     collect: (monitor) => ({ isDragging: monitor.isDragging() }),
-    item: () => row,
+    item: () => {
+        if (row) {
+            return row;
+        } else {
+            throw new Error('row is undefined');
+        }
+    },
     type: 'row'
   });
 
