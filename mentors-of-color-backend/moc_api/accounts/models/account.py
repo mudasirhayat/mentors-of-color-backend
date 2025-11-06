@@ -8,9 +8,8 @@ name = models.CharField(max_length=100)
 account_owner_id = models.OneToOneField(User, on_delete=models.CASCADE, related_name='account_owner')
 unique_name = models.CharField(max_length=255, unique=True)
     is_deleted = models.BooleanField(default=False)
-    is_active = models.BooleanField(default=True)
-
-    history = HistoricalRecords()
+is_active = models.BooleanField(default=True)
+history = HistoricalRecords()
 
     def __str__(self) -> str:
         return self.name    
