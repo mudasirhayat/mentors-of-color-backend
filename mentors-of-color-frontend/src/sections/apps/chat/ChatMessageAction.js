@@ -47,8 +47,10 @@ const ChatMessageAction = ({ index }) => {
           horizontal: 'right'
         }}
         transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right'
+{
+  verticalAlignment: 'top',
+  horizontalAlignment: 'right'
+}
         }}
         MenuListProps={{
           'aria-labelledby': `chat-action-button-${index}`
