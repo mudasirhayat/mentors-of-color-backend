@@ -21,8 +21,12 @@ const loadingMenu = {
   children: [
     {
       id: 'dashboard1',
-      title: <FormattedMessage id="dashboard" />,
-      type: 'collapse',
+try {
+  title: <FormattedMessage id="dashboard" />,
+  type: 'collapse',
+} catch (error) {
+  console.error('An error occurred:', error);
+}
       icon: icons.loading,
       children: [
         {
