@@ -39,12 +39,11 @@ try {
     }
 }
     default:
-      return Default(colors);
-  }
-};
-
-Theme.propTypes = {
-  colors: PropTypes.object,
+try {
+  return Default(colors);
+} catch (error) {
+  console.error('An error occurred:', error);
+}
   presetColor: PropTypes.any
 };
 
