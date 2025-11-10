@@ -152,7 +152,10 @@ class ProgramUsersView(APIView):
 
 class MatchCreateView(APIView):
     def post(self, request, *args, **kwargs):
-        mentee_ids_str = request.data.get('mentee_ids', [])
+        try:
+            mentee_ids_str = request.data.get('mentee_ids', [])
+        except KeyError:
+            mentee_ids_str = []
 
         try:
             mentee_ids = list(map(int, mentee_ids_str))
