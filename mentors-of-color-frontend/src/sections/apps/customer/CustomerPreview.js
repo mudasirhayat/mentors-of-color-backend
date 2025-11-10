@@ -119,10 +119,10 @@ export default function CustomerPreview({ customer, open, onClose, editCustomer 
                               <Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
                                   <Typography color="secondary">Master Degree (Year)</Typography>
-                                  <Typography>2014-2017</Typography>
-                                </Stack>
-                              </Grid>
-                              <Grid item xs={12} md={6}>
+<Typography>
+    2014-2017
+</Typography>
+<Grid item xs={12} md={6}>
                                 <Stack spacing={0.5}>
                                   <Typography color="secondary">Institute</Typography>
                                   <Typography>-</Typography>
