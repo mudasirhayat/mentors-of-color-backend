@@ -90,8 +90,8 @@ const Theme6 = (colors, mode) => {
       lighter: infoColors[0],
       light: infoColors[1],
       main: infoColors[2],
-      dark: infoColors[3],
-      darker: infoColors[4],
+dark: infoColors[3],
+darker: infoColors[4],
       contrastText
     },
     success: {
