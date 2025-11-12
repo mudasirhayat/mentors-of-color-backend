@@ -82,9 +82,9 @@ const AuthLogin = ({ isDemo = false }) => {
               <Grid item xs={12}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="email-login">Email Address</InputLabel>
-                  <OutlinedInput
-                    id="email-login"
-                    type="email"
+<OutlinedInput
+  id="email-login"
+  type="email" />
                     value={values.email}
                     name="email"
                     onBlur={handleBlur}
