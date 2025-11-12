@@ -23,8 +23,12 @@ const Register = () => {
               component={Link}
               to={isLoggedIn ? '/auth/login' : '/login'}
               variant="body1"
-              sx={{ textDecoration: 'none' }}
-              color="primary"
+try {
+  sx={{ textDecoration: 'none' }}
+  color="primary"
+} catch (error) {
+  console.error(error);
+}
             >
               Already have an account?
             </Typography>
