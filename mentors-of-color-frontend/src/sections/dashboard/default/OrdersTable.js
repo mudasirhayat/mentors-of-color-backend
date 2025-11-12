@@ -51,14 +51,9 @@ function stableSort(array, comparator) {
     }
     return a[1] - b[1];
   });
-  return stabilizedThis.map((el) => el[0]);
-}
-
-// ==============================|| ORDER TABLE - HEADER CELL ||============================== //
-
+return stabilizedThis.map((el) => el[0]);
 const headCells = [
-  {
-    id: 'tracking_no',
+    { id: 'tracking_no', }
     align: 'left',
     disablePadding: false,
     label: 'Tracking No.'
