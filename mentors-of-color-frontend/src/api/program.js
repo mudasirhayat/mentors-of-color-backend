@@ -94,28 +94,12 @@ export function useGetPrograms(accountID) {
 }
 
 export async function getProgramModerators(programID) {
-  // const { data, isLoading, error, isValidating } = useSWR(`${endpoints.key}/${programID}${endpoints.moderators}`, fetcher1, {
-  //   revalidateIfStale: false,
-  //   revalidateOnFocus: false,
-  //   revalidateOnReconnect: false
-  // });
-
-  // const memoizedValue = useMemo(
-  //   () => ({
-  //     moderators: data && restructureData(data) || [],
-  //     moderatorsLoading: isLoading,
-  //     programsError: error,
-  //     programsValidating: "",
-  //     programsEmpty: false
-  //   }),
-  //   // [data, error, isLoading, isValidating]
-  //   [data, error, isLoading, isValidating]
-  // );
-
-  // return memoizedValue;
-
-  const response = await axiosServices1.get(
-    `${endpoints.key}/${programID}${endpoints.moderators}`
+  try {
+    const response = await axiosServices1.get(
+      `${endpoints.key}/${programID}${endpoints.moderators}`
+    );
+    return response.data;
+  } catch (
   );
   const { data } = response;
   return restructureData(data);
