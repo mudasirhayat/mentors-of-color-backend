@@ -327,9 +327,9 @@ const ProgramListPage = () => {
                 <IconButton
                   color="error"
                   onClick={(e) => {
-                    e.stopPropagation();
-                    handleClose();
-                    setSelectedProgram(row.original)
+e.stopPropagation();
+handleClose();
+setSelectedProgram(row.original);
                   }}
                 >
                   <DeleteOutlined />
