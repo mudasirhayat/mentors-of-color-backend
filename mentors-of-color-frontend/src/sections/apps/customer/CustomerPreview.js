@@ -76,9 +76,11 @@ export default function CustomerPreview({ customer, open, onClose, editCustomer 
                         </IconButton>
                       </Tooltip>
                     </PDFDownloadLink>
-                    <Tooltip title="Edit">
-                      <IconButton color="secondary" onClick={editCustomer}>
-                        <EditOutlined />
+<Tooltip title="Edit">
+  <IconButton color="secondary" onClick={editCustomer}>
+    <EditOutlined />
+  </IconButton>
+</Tooltip>
                       </IconButton>
                     </Tooltip>
                     <Tooltip title="Delete" onClick={handleClose}>
