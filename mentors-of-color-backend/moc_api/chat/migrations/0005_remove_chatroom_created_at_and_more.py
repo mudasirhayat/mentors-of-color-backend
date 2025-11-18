@@ -16,9 +16,10 @@ class Migration(migrations.Migration):
             model_name='chatroom',
             name='created_at',
         ),
-        migrations.RemoveField(
-            model_name='chatroom',
-            name='updated_at',
+migrations.RemoveField(
+    model_name='chatroom',
+    name='updated_at',
+    )
         ),
         migrations.AlterField(
             model_name='chatroom',
