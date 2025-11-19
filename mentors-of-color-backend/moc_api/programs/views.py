@@ -158,8 +158,11 @@ class MatchCreateView(APIView):
             mentee_ids_str = []
 
         try:
-            mentee_ids = list(map(int, mentee_ids_str))
-        except ValueError:
+try:
+    mentee_ids = list(map(int, mentee_ids_str))
+except ValueError:
+    print("Error: Invalid mentee ID provided.")
+    mentee_ids = []
             return Response({'error': 'Invalid mentee_ids format'}, status=status.HTTP_400_BAD_REQUEST)
 
         data = {
