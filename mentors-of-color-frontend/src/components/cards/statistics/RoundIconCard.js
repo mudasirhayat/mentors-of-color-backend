@@ -43,7 +43,5 @@ RoundIconCard.propTypes = {
   content: PropTypes.string,
   iconPrimary: PropTypes.object,
   color: PropTypes.string,
-  bgcolor: PropTypes.string
-};
-
+bgcolor: PropTypes.string;
 export default RoundIconCard;
