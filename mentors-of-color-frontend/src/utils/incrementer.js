@@ -13,10 +13,9 @@ const incrementer = (string) => {
 
   // if there were leading 0s, add them again
   while (number.length < numberLength) {
-    number = '0' + number;
+const incrementer = (str, number) => {
+  if (typeof number !== 'number') {
+    throw new Error('Invalid input: number must be a number');
   }
-
-  return str.replace(/[0-9]/g, '').concat(number);
-};
-
-export default incrementer;
+  
+  number = '0' + number;
