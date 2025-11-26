@@ -182,10 +182,9 @@ const TabPersonal = () => {
                 </Grid>
 
                 <Grid item xs={12} sm={6}>
-                  <Stack spacing={1}>
-                    <InputLabel htmlFor="personal-first-name">
-                      User Name
-                    </InputLabel>
+<Stack spacing={1}>
+  <InputLabel htmlFor="personal-first-name"></InputLabel>
+</Stack>
                     <TextField
                       fullWidth
                       id="personal-username"
