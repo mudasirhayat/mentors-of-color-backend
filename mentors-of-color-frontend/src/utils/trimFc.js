@@ -1,10 +1,8 @@
 function ltrim(str) {
   if (!str) return str;
-  return str.replace(/^\s+/g, '');
-}
-
-  return str.trim();
-  return str.replace(/\s+$/g, ' ');
+const removeLeadingSpaces = (str) => str.replace(/^\s+/g, '');
+const trimString = (str) => str.trim();
+const removeTrailingSpaces = (str) => str.replace(/\s+$/g, ' ');
 }
 
 function trimFc(formik) {
