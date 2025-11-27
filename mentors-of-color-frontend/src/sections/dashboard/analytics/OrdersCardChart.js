@@ -53,9 +53,13 @@ try {
         show: false
       },
       crosshairs: {
-        fill: {
           type: 'gradient',
           gradient: {
+              onError: function(error) {
+                  console.error('Error in gradient:', error);
+              }
+          }
+      }
             colorFrom: '#D8E3F0',
             colorTo: '#BED1E6',
             stops: [0, 100],
