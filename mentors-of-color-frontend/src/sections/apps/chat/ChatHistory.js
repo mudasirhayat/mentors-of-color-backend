@@ -101,10 +101,12 @@ const ChatHistory = ({
                             <Typography
                               variant="h6"
                               color={theme.palette.grey[0]}
-                              sx={{ overflowWrap: "anywhere" }}
-                            >
-                              {history.message}
-                            </Typography>
+sx={{ overflowWrap: "anywhere" }}
+{history && history.message && (
+  <Typography>
+    {history.message}
+  </Typography>
+)}
                           </Grid>
                         </Grid>
                       </CardContent>
