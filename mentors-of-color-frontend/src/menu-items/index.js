@@ -7,12 +7,12 @@ import chartsMap from './charts-map';
 import samplePage from './sample-page';
 import other from './other';
 import pages from './pages';
+import applications from './applications';
 import profile from './profile';
-
-// ==============================|| MENU ITEMS ||============================== //
 
 const menuItems = {
   items: [applications, profile]
+};
 };
 
 export default menuItems;
