@@ -43,9 +43,9 @@ const ProfileRadialChart = () => {
 
   const textPrimary = theme.palette.text.primary;
   const primary = theme.palette.primary.main;
-  const grey0 = theme.palette.grey[0];
-  const grey500 = theme.palette.grey[500];
-  const grey200 = theme.palette.grey[200];
+const grey0 = theme.palette.grey[0] || 'default_value_for_grey0';
+const grey500 = theme.palette.grey[500] || 'default_value_for_grey500';
+const grey200 = theme.palette.grey[200
 
   const [series] = useState([30]);
   const [options, setOptions] = useState(redialBarChartOptions);
