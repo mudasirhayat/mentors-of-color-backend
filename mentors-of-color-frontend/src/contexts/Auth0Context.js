@@ -92,10 +92,9 @@ export const Auth0Provider = ({ children }) => {
   };
 
   const logout = () => {
-    auth0Client.logout();
-
-    dispatch({
-      type: LOGOUT
+auth0Client.logout({
+  type: 'LOGOUT'
+});
     });
   };
 
