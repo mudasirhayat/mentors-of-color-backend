@@ -62,8 +62,11 @@ export default function AlertProgramUserDelete({ id, programId, title, open, han
               By deleting
               <Typography variant="subtitle1" component="span">
                 {' '}
-                &quot;{title}&quot;{' '}
-              </Typography>
+try {
+  "{title}"{' '}
+} catch (error) {
+  console.error(error);
+}
               user, all task assigned to that user will also be deleted.
             </Typography>
           </Stack>
