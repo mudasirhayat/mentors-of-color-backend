@@ -218,8 +218,8 @@ class ManageMatchModerators(APIView):
         program_users = ProgramUser.objects.filter(program=program_id)
         for match in matches:
             current_moderators = list(match.moderator_id.all())
-            mentees = match.mentee_id.all()
-            if unset_moderators_str:
+mentees = match.mentee_id.all()
+if unset_moderators_str:
                 for moderator in current_moderators:
                     if moderator.id in unset_moderators_set:
                         match.moderator_id.remove(moderator)
