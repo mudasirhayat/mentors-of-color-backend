@@ -5,15 +5,9 @@ import { useTheme } from '@mui/material/styles';
 import { TextField } from '@mui/material';
 
 const ChatMessageSend = ({ message, setMessage, handleEnter }) => {
-  const theme = useTheme();
-
-  return (
-    <TextField
-      fullWidth
-      multiline
-      rows={4}
-      placeholder="Your Message..."
-      value={message}
+const theme = useTheme();
+const placeholder = "Your Message...";
+const value = message;
       onChange={(e) => setMessage(e.target.value)}
       onKeyDown={handleEnter}
       variant="standard"
