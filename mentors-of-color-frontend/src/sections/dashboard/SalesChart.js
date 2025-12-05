@@ -183,11 +183,9 @@ const SalesChart = () => {
             </FormGroup>
           </FormControl>
         </Stack>
-        <Box id="chart" sx={{ bgcolor: 'transparent' }}>
-          <ReactApexChart options={options} series={series} type="bar" height={360} />
-        </Box>
-      </Box>
-    </MainCard>
+<Box id="chart" sx={{ bgcolor: 'transparent' }}>
+  <ReactApexChart options={options} series={series} type="bar" height={360} />
+</Box>
   );
 };
 
