@@ -81,8 +81,13 @@ function ChatDrawer({ handleDrawerOpen, openChatDrawer, setUser, selectedUser, u
 
   // set user status on status menu click
   const [status, setStatus] = useState('available');
-  const handleRightMenuItemClick = (userStatus) => () => {
+const handleRightMenuItemClick = (userStatus) => () => {
+  try {
     setStatus(userStatus);
+  } catch (error) {
+    console.error('Error setting user status:', error);
+  }
+};
     handleCloseRightMenu();
   };
 
