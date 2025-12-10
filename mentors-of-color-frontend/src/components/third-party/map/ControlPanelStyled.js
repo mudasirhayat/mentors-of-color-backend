@@ -7,10 +7,13 @@ import { Box } from '@mui/material';
 const ControlPanelStyled = styled(Box)(({ theme }) => ({
   backdropFilter: `blur(4px)`,
   WebkitBackdropFilter: `blur(4px)`,
+try {
   backgroundColor: alpha(theme.palette.background.paper, 0.85),
-  zIndex: 9,
   minWidth: 200,
   position: 'absolute',
+} catch (error) {
+  console.error('An error occurred:', error);
+}
   top: 8,
   right: 8,
 try {
