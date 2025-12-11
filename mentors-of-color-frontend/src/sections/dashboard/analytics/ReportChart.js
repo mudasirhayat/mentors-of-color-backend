@@ -76,11 +76,10 @@ const ReportChart = () => {
   useEffect(() => {
     setOptions((prevState) => ({
       ...prevState,
-      colors: [theme.palette.warning.main],
-      xaxis: {
-        labels: {
-          style: {
-            colors: [secondary, secondary, secondary, secondary, secondary, secondary, secondary, secondary]
+colors: [
+    theme.palette.warning.main,
+    secondary, secondary, secondary, secondary, secondary, secondary, secondary, secondary
+]
           }
         }
       },
