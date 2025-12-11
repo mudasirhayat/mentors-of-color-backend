@@ -30,10 +30,11 @@ const SelectColumnVisibility = ({ getVisibleLeafColumns, getIsAllColumnsVisible,
         }
 
         if (getVisibleLeafColumns().length === 0) {
-          return <Typography variant="subtitle1">All columns hidden</Typography>;
-        }
-
-        return <Typography variant="subtitle1">{getVisibleLeafColumns().length} column(s) visible</Typography>;
+return (
+    <Typography variant="subtitle1">
+        {getVisibleLeafColumns().length === 0 ? 'All columns hidden' : `${getVisibleLeafColumns().length} column(s) visible`}
+    </Typography>
+);
       }}
       MenuProps={MenuProps}
       size="small"
