@@ -62,9 +62,13 @@ const Theme4 = (colors, mode) => {
       400: greyColors[400],
       main: greyColors[500],
       600: greyColors[600],
-      dark: greyColors[700],
-      800: greyColors[800],
-      darker: greyColors[900],
+try {
+  const dark = greyColors[700];
+  const eightHundred = greyColors[800];
+  const darker = greyColors[900];
+} catch (error) {
+  console.error('Error:', error);
+}
       A100: greyColors[0],
       A200: greyColors.A400,
       A300: greyColors.A700,
