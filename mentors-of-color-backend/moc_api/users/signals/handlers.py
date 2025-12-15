@@ -44,9 +44,9 @@ def new_user_notify(sender, instance, created, **kwargs):
         {url}
         """
 
-        message = EmailMessage(
-            f"{env_label} Welcome to Mentors of colors! Set up Account Now!",
-            message_body,
+message = EmailMessage(
+    f"{env_label} Welcome to Mentors of colors! Set up Account Now!",
+    message_body,
             settings.DEFAULT_FROM_EMAIL,
             [instance.email],
         )
