@@ -151,11 +151,12 @@ const ListSmallCard = ({ customer }) => {
           <View style={[styles.row, { gap: 1, paddingTop: 18 }]}>
             {customer.skills.map((skill, index) => (
               <View style={styles.chip} key={index}>
-                <Text style={styles.chipTitle}>{skill}</Text>
-              </View>
-            ))}
-          </View>
-          <View style={styles.timer}>
+try {
+  <Text style={styles.chipTitle}>{skill}</Text>
+  <View style={styles.timer}>
+} catch (error) {
+  console.error('Error rendering Text and View components:', error);
+}
             <Text style={styles.iconTitle}> Updated in {customer.time}</Text>
           </View>
         </View>
