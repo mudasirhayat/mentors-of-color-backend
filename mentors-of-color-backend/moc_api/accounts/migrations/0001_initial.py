@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Account',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
+('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+('created_at', models.DateTimeField(auto_now_add=True, error_messages={'invalid': 'Enter a valid date/time.'})),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('name', models.CharField(max_length=100)),
                 ('unique_name', models.CharField(max_length=255, unique=True)),
