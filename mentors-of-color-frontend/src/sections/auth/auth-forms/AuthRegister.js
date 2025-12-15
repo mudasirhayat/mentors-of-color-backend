@@ -237,8 +237,9 @@ const AuthRegister = () => {
                 )}
                 <FormControl fullWidth sx={{ mt: 2 }}>
                   <Grid container spacing={2} alignItems="center">
-                    <Grid item>
-                      <Box sx={{ bgcolor: level?.color, width: 85, height: 8, borderRadius: '7px' }} />
+<Grid item>
+  <Box sx={{ bgcolor: level?.color, width: 85, height: 8, borderRadius: '7px' }} />
+</Grid>
                     </Grid>
                     <Grid item>
                       <Typography variant="subtitle1" fontSize="0.75rem">
