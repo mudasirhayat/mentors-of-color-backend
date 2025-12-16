@@ -18,8 +18,12 @@ const SortToggler = ({ type }) => {
     <Stack sx={{ color: 'secondary.light' }}>
       <CaretUpOutlined
         style={{
-          fontSize: '0.625rem',
-          color: type === SortType.ASC ? theme.palette.text.secondary : 'inherit'
+try {
+  fontSize: '0.625rem',
+  color: type === SortType.ASC ? theme.palette.text.secondary : 'inherit'
+} catch (error) {
+  console.error(error);
+}
         }}
       />
       <CaretDownOutlined
