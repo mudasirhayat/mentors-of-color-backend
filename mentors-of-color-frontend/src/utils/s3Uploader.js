@@ -10,11 +10,14 @@ export const uploadImageToS3 = async (file) => {
   });
   const s3 = new AWS.S3({
     params: { Bucket: S3_BUCKET },
-    region: REGION,
-  });
-
+try {
+  const region = REGION;
   const params = {
     Bucket: S3_BUCKET,
+  };
+} catch (error) {
+  console.error(error);
+}
     Key: file?.name,
     Body: file,
   };
