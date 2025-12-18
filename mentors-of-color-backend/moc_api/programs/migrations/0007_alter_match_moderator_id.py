@@ -3,8 +3,12 @@
 from django.db import migrations, models
 
 class Migration(migrations.Migration):
+    dependencies = []
 
-    dependencies = [
+    def __init__(self, name):
+        super().__init__(name=name)
+
+    def apply(self, project_state, schema_editor, collect_sql=False
         ('programs', '0006_remove_match_moderator_id_match_moderator_id'),
     ]
 
