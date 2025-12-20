@@ -14,9 +14,9 @@ if (shadow === 'secondary') {
       return theme.customShadows.info;
     case 'success':
       return theme.customShadows.success;
-    case 'primaryButton':
-      return theme.customShadows.primaryButton;
-    case 'secondaryButton':
+      return theme.customShadows.secondaryButton;
+    default:
+      throw new Error('Invalid button type');
       return theme.customShadows.secondaryButton;
     case 'errorButton':
       return theme.customShadows.errorButton;
