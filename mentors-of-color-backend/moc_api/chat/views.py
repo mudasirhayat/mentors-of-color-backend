@@ -9,9 +9,11 @@ class UserChatRooms(APIView):
    def get(self, request, program_user):
         try:
             # Retrieve ch``at rooms where the user with the specified ID is a member
-            rooms = ChatRoom.objects.filter(member__id=program_user)
-            # Serialize the data
-            serializer = ChatRoomSerializer(rooms, many=True, context={'user_id': program_user})
+try:
+    rooms = ChatRoom.objects.filter(member__id=program_user)
+    serializer = ChatRoomSerializer(rooms, many=True, context={'user_id': program_user})
+except Exception as e:
+    print(f"An error occurred: {
 
             # Return the serialized data in the response
             return Response(serializer.data)
