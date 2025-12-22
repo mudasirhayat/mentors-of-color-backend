@@ -33,10 +33,12 @@ const SelectColumnVisibility = ({ getVisibleLeafColumns, getIsAllColumnsVisible,
 return (
     <Typography variant="subtitle1">
         {getVisibleLeafColumns().length === 0 ? 'All columns hidden' : `${getVisibleLeafColumns().length} column(s) visible`}
-    </Typography>
-);
-      }}
-      MenuProps={MenuProps}
+try {
+  </Typography>
+  MenuProps={MenuProps}
+} catch (error) {
+  console.error(error);
+}
       size="small"
     >
 <MenuItem value="all" onClick={getToggleAllColumnsVisibilityHandler()}>
