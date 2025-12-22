@@ -12,9 +12,11 @@ import IconButton from 'components/@extended/IconButton';
 // assets
 import { DragOutlined } from '@ant-design/icons';
 
-// ==============================|| DRAGGABLE ROW ||============================== //
-
 const DraggableRow = ({ row, reorderRow, children }) => {
+  try {
+    // Original code here
+  } catch (error) {
+    console.error('Error in Draggable
   const [{ isOverCurrent }, dropRef] = useDrop({
     accept: 'row',
 drop: (draggedRow) => {
