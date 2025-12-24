@@ -9,14 +9,11 @@ import UploadCover from 'assets/images/upload/upload.svg';
 
 export default function PlaceholderContent({ type }) {
     if (type !== 'STANDARD') {
-        throw new Error('Invalid type provided');
-    }
-
-    // Original code here
+try {
+  throw new Error('Invalid type provided');
+} catch (error) {
+  console.error(error.message);
 }
-        <Stack
-          spacing={2}
-          alignItems="center"
           justifyContent="center"
           direction={{ xs: 'column', md: 'row' }}
           sx={{ width: 1, textAlign: { xs: 'center', md: 'left' } }}
