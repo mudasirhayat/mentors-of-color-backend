@@ -26,8 +26,10 @@ const ChatHeader = ({ loading, user, openChatDrawer, handleDrawerOpen }) => {
         {openChatDrawer ? <MenuFoldOutlined /> : <MenuUnfoldOutlined />}
       </IconButton>
       {loading && Object.keys(user).length === 0 ? (
-        <List disablePadding>
-          <ListItem disablePadding disableGutters>
+try {
+  if (!List) throw new Error('List is not defined');
+  if (!ListItem) throw new Error('ListItem is not defined');
+  if (!disablePadding) throw new Error('disablePadding is not defined');
             <ListItemAvatar>
               <Skeleton variant="circular" width={40} height={40} />
             </ListItemAvatar>
