@@ -17,11 +17,7 @@ const MenuProps = {
 // ==============================|| COLUMN SORTING - SELECT ||============================== //
 
 const SelectColumnSorting = ({ getState, getAllColumns, setSorting, size = 'medium' }) => (
-  <FormControl sx={{ width: 200 }}>
-    <Select
-      id="column-sorting"
-      multiple
-      displayEmpty
+<FormControl sx={{ width: 200 }} id="column-sorting" displayEmpty />
       value={getState().sorting.length > 0 ? getState().sorting : []}
       input={<OutlinedInput id="select-column-sorting" placeholder="select column" />}
       renderValue={(selected) => {
