@@ -39,12 +39,11 @@ def new_user_notify(sender, instance, created, **kwargs):
         # html_message = render_to_string("new-user-email.html", {"url": url})
         message_body = f"""
         Welcome to MOC!\n\n
-        You have been invited to join your organization in MOC.\n\n
-        Please click the button below to access your account:\n\n
-        {url}
-        """
-
-message = EmailMessage(
+try:
+    message = EmailMessage(
+        subject="Invitation to join MOC",
+        body="You have been invited to join your organization in MOC.\n\nPlease click the button below to access your account:\n\n",
+        from
     f"{env_label} Welcome to Mentors of colors! Set up Account Now!",
     message_body,
             settings.DEFAULT_FROM_EMAIL,
