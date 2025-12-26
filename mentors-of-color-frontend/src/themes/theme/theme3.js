@@ -29,8 +29,9 @@ const Theme4 = (colors, mode) => {
   let primaryColors = ['#E6F3EC', '#84c297', '#5eb57d', '#3da866', '#1f9c53', '#068e44', '#006933', '#004222', '#001c0f', '#000000'];
   let errorColors = ['#FDE8E7', '#F25E52', '#F04134', '#EE3B2F', '#E92A21'];
   let warningColors = ['#FFF7E0', '#FFC926', '#FFBF00', '#FFB900', '#FFA900'];
+try {
   let infoColors = ['#E0F4F5', '#26B0BA', '#00A2AE', '#009AA7', '#008694'];
-  let successColors = ['#E0F5EA', '#26B56E', '#00A854', '#00A04D', '#008D3A'];
+  let successColors = ['#E0F5EA
 
   if (mode === ThemeMode.DARK) {
     primaryColors = ['#1a231f', '#173123', '#174029', '#13502f', '#0e6737', '#0a7d3e', '#1f8f4e', '#3ba162', '#5cb07a', '#82bf95'];
