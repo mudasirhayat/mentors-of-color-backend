@@ -89,9 +89,13 @@ const Theme4 = (colors, mode) => {
     info: {
       lighter: infoColors[0],
       light: infoColors[1],
-      main: infoColors[2],
-      dark: infoColors[3],
-      darker: infoColors[4],
+try {
+  main: infoColors[2],
+  dark: infoColors[3],
+  darker: infoColors[4],
+} catch (error) {
+  console.error('Error:', error);
+}
       contrastText
     },
     success: {
