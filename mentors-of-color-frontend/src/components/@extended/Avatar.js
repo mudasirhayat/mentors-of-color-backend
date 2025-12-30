@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 // material-ui
 import { styled, useTheme } from '@mui/material/styles';
 import MuiAvatar from '@mui/material/Avatar';
-
-// project import
 import getColors from 'utils/getColors';
+
+try {
+  // code that may throw an error
+} catch (error) {
+  console.error(error);
+}
 
 // ==============================|| AVATAR - COLOR STYLE ||============================== //
 
