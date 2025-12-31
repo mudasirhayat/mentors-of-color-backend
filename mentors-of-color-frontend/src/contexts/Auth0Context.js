@@ -102,11 +102,14 @@ auth0Client.logout({
 
   const updateProfile = () => {};
 
-  if (state.isInitialized !== undefined && !state.isInitialized) {
-    return <Loader />;
-  }
+if (state.isInitialized !== undefined && !state.isInitialized) {
+  return <Loader />;
+}
 
-  return <Auth0Context.Provider value={{ ...state, login, logout, resetPassword, updateProfile }}>{children}</Auth0Context.Provider>;
+return (
+  <Auth0Context.Provider value={{ ...state, login, logout, resetPassword, updateProfile }}>
+    {children}
+  </Auth
 };
 
 Auth0Provider.propTypes = {
