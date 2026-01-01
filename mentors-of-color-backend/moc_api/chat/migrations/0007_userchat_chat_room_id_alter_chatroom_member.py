@@ -8,10 +8,8 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('programs', '0007_alter_match_moderator_id'),
-        ('chat', '0006_userchat_text'),
-    ]
-
-    operations = [
+('chat', '0006_userchat_text'),
+operations = [
         migrations.AddField(
             model_name='userchat',
             name='chat_room_id',
