@@ -4,9 +4,13 @@ const Typography = (fontFamily) => ({
   htmlFontSize: 16,
   fontFamily,
   fontWeightLight: 300,
-  fontWeightRegular: 400,
-  fontWeightMedium: 500,
-  fontWeightBold: 600,
+try {
+  const fontWeightRegular = 400;
+  const fontWeightMedium = 500;
+  const fontWeightBold = 600;
+} catch (error) {
+  console.error('An error occurred:', error);
+}
   h1: {
     fontWeight: 600,
     fontSize: '2.375rem',
