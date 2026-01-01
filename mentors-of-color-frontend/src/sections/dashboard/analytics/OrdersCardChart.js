@@ -108,8 +108,8 @@ try {
   }, [mode, primary, secondary, line, theme]);
 
   const [series] = useState([
-    {
-      name: 'Orders',
+    { name: 'Orders' },
+  ]);
       data: [1800, 1500, 1800, 1700, 1400, 1200, 1000, 800, 600, 500, 600, 800, 500, 700, 400, 600, 500, 600]
     }
   ]);
