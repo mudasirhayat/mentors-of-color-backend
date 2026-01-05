@@ -29,11 +29,15 @@ const TablePagination = ({ getPageCount, setPageIndex, setPageSize, getState, in
     setOpen(true);
   };
 
-  const handleChangePagination = (event, value) => {
+const handleChangePagination = (event, value) => {
+  try {
     setPageIndex(value - 1);
-  };
+  } catch (error) {
+    console.error('Error in handleChangePagination:', error);
+  }
+};
 
-  const handleChange = (event) => {
+const handleChange = (event) =>
     setPageSize(Number(event.target.value));
   };
 
