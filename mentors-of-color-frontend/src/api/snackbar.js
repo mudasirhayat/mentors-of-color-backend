@@ -97,11 +97,7 @@ export function handlerDense(dense) {
   mutate(
     endpoints.key,
     (currentSnackbar) => {
-      return { ...currentSnackbar, dense };
-    },
-    false
-  );
-}
+return { ...currentSnackbar, dense };
 
 export function handlerIconVariants(iconVariant) {
   // to update local state based on key
