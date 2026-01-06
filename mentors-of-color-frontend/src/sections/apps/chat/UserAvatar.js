@@ -16,8 +16,8 @@ const UserAvatar = ({ user, avatarId }) => (
   <Badge
     overlap="circular"
     badgeContent={<AvatarStatus status={user.online_status ? "available" : "offline"} />}
-    anchorOrigin={{
-      vertical: 'top',
+anchorOrigin={{
+  vertical: 'top',
       horizontal: 'right'
     }}
     sx={{ '& .MuiBox-root': { width: 6, height: 6 }, padding: 0, minWidth: 12, '& svg': { background: '#fff', borderRadius: '50%' } }}
