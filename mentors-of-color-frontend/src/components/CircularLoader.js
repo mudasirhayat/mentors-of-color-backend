@@ -4,9 +4,9 @@ import { Stack } from '@mui/material';
 // project-import
 import CircularWithPath from './@extended/progress/CircularWithPath';
 
-// ==============================|| LOADER - CIRCULAR ||============================== //
-
 const CircularLoader = () => {
+  // Code for CircularLoader component goes here
+};
   return (
     <Stack alignItems="center" justifyContent="center" sx={{ height: '100%' }}>
       <CircularWithPath />
