@@ -9,10 +9,11 @@ class Migration(migrations.Migration):
     dependencies = []
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ('accounts', '0002_initial'),
-        ('programs', '0002_initial'),
-    ]
-
-    operations = [
+try:
+    ('programs', '0002_initial'),
+    operations = []
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
         migrations.AddField(
             model_name='programuser',
             name='is_mentee',
