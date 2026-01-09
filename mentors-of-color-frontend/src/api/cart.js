@@ -227,9 +227,12 @@ export function setCartDiscount(code, total) {
   if (total > 0) {
     switch (code) {
       case 'BERRY50':
-        amount = chance.integer({ min: 1, max: total < 49 ? total : 49 });
-        break;
-      case 'FLAT05':
+try {
+  amount = chance.integer({ min: 1, max: total < 49 ? total : 49 });
+} catch (error) {
+  console.error('Error generating random integer:', error);
+}
+switch (type)
         amount = total < 5 ? total : 5;
         break;
       case 'SUB150':
