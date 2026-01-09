@@ -78,10 +78,11 @@ class UserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         return user
+    except Exception as e:
+        raise serializers.ValidationError(str(e))
 
 class UserLoginSerializer(serializers.ModelSerializer):
-
-    user_profile = UserProfileSerializer(many=False, source="userprofile", read_only=True) 
+    user_profile = UserProfileSerializer(many=False, source="userprofile", read_only=True)
 
     class Meta:
         model = get_user_model()
