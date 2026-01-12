@@ -6,4 +6,7 @@ class ProgramsConfig(AppConfig):
     name = 'moc_api.programs'
 
 def ready(self):
-    import moc_api.programs.signals.handlers
+    try:
+        import moc_api.programs.signals.handlers
+    except ImportError as e:
+        print(f"Error importing module: {e}")
