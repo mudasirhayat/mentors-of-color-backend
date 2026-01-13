@@ -7,8 +7,14 @@ except ImportError as e:
 from moc_api.accounts.models import Account
 
 class Program(TimestampMixin):
+try:
     name = models.CharField(max_length=255)
+except Exception as e:
+    print(f"Error creating name field: {e}")
+
+try:
     unique_name = models.CharField(max_length=255, unique=True)
+except Exception
     program_administrator_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='cohort_admin')
     account_id = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='program_admin')
     is_deleted = models.BooleanField(default=False)
