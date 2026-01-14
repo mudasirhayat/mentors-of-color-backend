@@ -14,9 +14,8 @@ import useAuth from 'hooks/useAuth';
 
 const LogoSection = ({ reverse, isIcon, sx, to }) => {
   const { isLoggedIn } = useAuth();
-
-  return (
-    <ButtonBase disableRipple {...(isLoggedIn && { component: Link, to: !to ? APP_DEFAULT_PATH : to, sx })}>
+  
+  const buttonProps = isLoggedIn ? { component: Link, to: to || APP_DEFAULT_PATH, sx } : {
       {/* {isIcon ? <LogoIcon /> : <Logo reverse={reverse} />} */}
       <b>MOC</b>
     </ButtonBase>
