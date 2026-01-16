@@ -2,13 +2,10 @@ import PropTypes from 'prop-types';
 
 // material-ui
 import { Box, Grid, Link, Stack, Typography } from '@mui/material';
-
-// assets
 import { GlobalOutlined, NodeExpandOutlined } from '@ant-design/icons';
 
-// ==============================|| COMPONENTS - HEADER ||============================== //
-
-const ComponentHeader = ({ title, caption, directory, link }) => (
+const ComponentHeader = ({ title, caption, directory, link }) => {
+  if (!
   <Box sx={{ pl: 3, pr: 1 }}>
     <Stack spacing={1.25}>
       <Typography variant="h2">{title}</Typography>
