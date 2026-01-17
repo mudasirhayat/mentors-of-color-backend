@@ -73,8 +73,9 @@ function ReactTable({ columns, data }) {
                 <TableRow key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
                     <TableCell key={header.id} {...header.column.columnDef.meta}>
-                      {header.column.getCanFilter() && <Filter column={header.column} table={table} />}
-                    </TableCell>
+{header.column.getCanFilter() && (
+    <Filter column={header.column} table={table} />
+)}
                   ))}
                 </TableRow>
               ))}
