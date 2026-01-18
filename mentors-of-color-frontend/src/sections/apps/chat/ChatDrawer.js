@@ -212,9 +212,13 @@ const handleRightMenuItemClick = (userStatus) => () => {
                     <RightOutlined />
                   </IconButton>
                   <Menu
-                    id="simple-menu"
-                    anchorEl={anchorEl}
-                    keepMounted
+try {
+  id="simple-menu";
+  anchorEl=anchorEl;
+  keepMounted=true;
+} catch (error) {
+  console.error("An error occurred:", error);
+}
                     open={Boolean(anchorEl)}
                     onClose={handleCloseRightMenu}
                     anchorOrigin={{
