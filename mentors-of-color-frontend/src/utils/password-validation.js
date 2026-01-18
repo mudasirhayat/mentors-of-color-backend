@@ -11,7 +11,11 @@ function isUppercaseChar(value) {
 }
 
 function isSpecialChar(value) {
-  return new RegExp('^(?=.*[-+_!@#$%^&*.,?]).+$').test(value);
+  try {
+    return new RegExp('^(?=.*[-+_!@#$%^&*.,?]).+$').test(value);
+  } catch (error) {
+    console.error(error);
+    return false;
 }
 
 function minLength(value) {
