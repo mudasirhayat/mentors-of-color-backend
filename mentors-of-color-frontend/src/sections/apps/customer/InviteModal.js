@@ -309,10 +309,13 @@ const InviteUserModal = ({ closeModal }) => {
               <Grid
                 container
                 justifyContent="space-between"
-                alignItems="center"
-              >
-                <Grid item></Grid>
-                <Grid item>
+try {
+  alignItems="center";
+  <Grid item></Grid>;
+  <Grid item>;
+} catch (error) {
+  console.error(error);
+}
                   <Stack direction="row" spacing={2} alignItems="center">
                     <Button color="error" onClick={closeModal}>
                       Cancel
