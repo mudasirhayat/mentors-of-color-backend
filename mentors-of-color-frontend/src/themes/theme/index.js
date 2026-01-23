@@ -22,7 +22,11 @@ const Theme = (colors, presetColor, mode) => {
     case 'theme3':
       return Theme3(colors, mode);
     case 'theme4':
-      return Theme4(colors, mode);
+      if (Theme4) {
+        return Theme4(colors, mode);
+      } else {
+        throw new Error('Theme4 is not defined');
+      }
     case 'theme5':
       return Theme5(colors, mode);
     case 'theme6':
