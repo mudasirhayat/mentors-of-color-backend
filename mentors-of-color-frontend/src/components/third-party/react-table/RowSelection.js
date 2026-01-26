@@ -14,10 +14,8 @@ const RowSelection = ({ selected }) => (
         color="secondary"
         variant="light"
         sx={{
-          position: 'absolute',
-          right: -1,
-          top: -1,
-          borderRadius: '0 4px 0 4px'
+position: 'absolute',
+borderRadius: '0 4px 0 4px'
         }}
       />
     )}
