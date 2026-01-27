@@ -18,7 +18,8 @@ const UserAvatar = ({ user, avatarId }) => (
     badgeContent={<AvatarStatus status={user.online_status ? "available" : "offline"} />}
 anchorOrigin={{
   vertical: 'top',
-      horizontal: 'right'
+  horizontal: 'right'
+}};
     }}
     sx={{ '& .MuiBox-root': { width: 6, height: 6 }, padding: 0, minWidth: 12, '& svg': { background: '#fff', borderRadius: '50%' } }}
   >
