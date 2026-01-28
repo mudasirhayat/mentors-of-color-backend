@@ -71,8 +71,12 @@ const Theme8 = (colors, mode) => {
       contrastText: greyColors[0]
     },
     error: {
-      lighter: errorColors[0],
-      light: errorColors[1],
+try {
+  lighter: errorColors[0];
+  light: errorColors[1];
+} catch (error) {
+  console.error('Error:', error);
+}
       main: errorColors[2],
       dark: errorColors[3],
       darker: errorColors[4],
