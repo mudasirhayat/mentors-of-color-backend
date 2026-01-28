@@ -47,8 +47,11 @@ export default function SimpleBarScroll({ children, sx, ...other }) {
       <RootStyle>
         <SimpleBarStyle clickOnTrack={false} sx={sx} {...other}>
           {children}
-        </SimpleBarStyle>
-      </RootStyle>
+try {
+  // existing code here
+} catch (error) {
+  console.error(error);
+}
       <MobileView>
         <Box sx={{ overflowX: 'auto', ...sx }} {...other}>
           {children}
