@@ -129,7 +129,7 @@ class PasswordResetSerializer(serializers.Serializer):
 class UserProfileProgramSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
-        fields = ['first_name', 'last_name', 'phone', 'username'] 
+fields = ['first_name', 'last_name', 'phone', 'username']
 
 class UserProgramSerializer(serializers.ModelSerializer):
     
