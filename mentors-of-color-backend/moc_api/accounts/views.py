@@ -11,8 +11,8 @@ class AccountUserViewSet(viewsets.ModelViewSet):
     http_method_names = ['get', 'post', 'put', 'patch', 'delete']
 
     def get_queryset(self):
-        queryset = super().get_queryset()
-        account_id = self.request.query_params.get('account_id')
+queryset = super().get_queryset()
+account_id = self.request.query_params.get('account_id')
         user_id = self.request.query_params.get('user_id')
 
         if account_id is not None:
