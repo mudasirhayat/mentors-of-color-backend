@@ -87,9 +87,9 @@ const styles = StyleSheet.create({
   },
   chip: {
     border: `1px solid ${textSecondary}`,
-    alignItems: 'center',
-    borderRadius: '4px',
-    marginLeft: 4,
+alignItems: 'center',
+borderRadius: '4px',
+marginLeft: 4,
     marginRight: 4,
     marginBottom: 8
   },
