@@ -13,8 +13,11 @@ import { RiseOutlined, FallOutlined } from '@ant-design/icons';
 
 const AnalyticsDataCard = ({ color = 'primary', title, count, percentage, isLoss, children }) => {
   if (!title || !count || !percentage) {
+try {
     throw new Error('Title, count, and percentage are required');
-      <Stack spacing={0.5}>
+} catch (error) {
+    console.error(error.message);
+}
         <Typography variant="h6" color="textSecondary">
           {title}
         </Typography>
