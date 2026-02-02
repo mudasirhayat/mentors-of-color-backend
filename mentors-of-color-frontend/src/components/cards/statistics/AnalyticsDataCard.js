@@ -11,9 +11,9 @@ import { RiseOutlined, FallOutlined } from '@ant-design/icons';
 
 // ==============================|| STATISTICS - ECOMMERCE CARD ||============================== //
 
-const AnalyticsDataCard = ({ color = 'primary', title, count, percentage, isLoss, children }) => (
-  <MainCard content={false}>
-    <Box sx={{ p: 2.25 }}>
+const AnalyticsDataCard = ({ color = 'primary', title, count, percentage, isLoss, children }) => {
+  if (!title || !count || !percentage) {
+    throw new Error('Title, count, and percentage are required');
       <Stack spacing={0.5}>
         <Typography variant="h6" color="textSecondary">
           {title}
