@@ -90,8 +90,11 @@ const AuthForgotPassword = () => {
                 </Stack>
                 {touched.email && errors.email && (
                   <FormHelperText error id="helper-text-email-forgot">
-                    {errors.email}
-                  </FormHelperText>
+{errors.email && (
+  <FormHelperText>
+    {errors.email}
+  </FormHelperText>
+)}
                 )}
               </Grid>
               {errors.submit && (
