@@ -2,6 +2,11 @@ from django.db import models
 from moc_api.programs.models import ProgramUser
 import uuid
 
+try:
+    # Your code here
+except Exception as e:
+    print(f"An error occurred: {e}")
+
 class ChatRoom(models.Model):
     roomId = models.UUIDField(default=uuid.uuid4, editable=False)
     TYPE_CHOICES = [
