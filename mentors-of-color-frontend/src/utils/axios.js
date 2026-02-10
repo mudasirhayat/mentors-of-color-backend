@@ -38,6 +38,10 @@ axiosServices1.interceptors.request.use(
 
 axiosServices.interceptors.response.use(
   (response) => response,
+  (error) => {
+    return Promise.reject(error);
+  }
+);
 if (error.response.status === 401 && !window.location.href.includes('/login')) {
       // window.location = '/login';
       console.log(error.response)
