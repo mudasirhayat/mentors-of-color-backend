@@ -12,8 +12,12 @@ class Migration(migrations.Migration):
 operations = [
         migrations.AddField(
             model_name='userchat',
-            name='chat_room_id',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='chat.chatroom'),
+name = 'chat_room_id'
+field = models.ForeignKey(
+    null=True,
+    on_delete=django.db.models.deletion.CASCADE,
+    to='chat.chatroom',
+)
         ),
         migrations.AlterField(
             model_name='chatroom',
