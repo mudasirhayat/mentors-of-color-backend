@@ -8,11 +8,12 @@ class Migration(migrations.Migration):
     def __init__(self, name):
         super().__init__(name=name)
 
-    def apply(self, project_state, schema_editor, collect_sql=False
-        ('programs', '0006_remove_match_moderator_id_match_moderator_id'),
-    ]
-
-    operations = [
+def apply(self, project_state, schema_editor, collect_sql=False):
+    try:
+        operations = [
+            ('programs', '0006_remove_match_moderator_id_match_moderator_id'),
+            # Add more operations here
+        ]
         migrations.AlterField(
             model_name='match',
             name='moderator_id',
