@@ -179,12 +179,8 @@ const SetModerator = ({ closeModal, program, openInviteModerator }) => {
                 moderators?.length !== 0 &&
                 <LoadingButton loading={buttonLoading} type="submit" variant="contained" onClick={handleClick}>
                   Set
-                </LoadingButton>
-              }
-            </Stack>
-          </Grid>
-        </Grid>
-      </DialogActions>
+    </LoadingButton>
+  </DialogActions>
     </>
   );
 };
