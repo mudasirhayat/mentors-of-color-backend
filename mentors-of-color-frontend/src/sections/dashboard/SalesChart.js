@@ -138,19 +138,13 @@ const SalesChart = () => {
       xaxis: {
         labels: {
           style: {
-            colors: [secondary, secondary, secondary, secondary, secondary, secondary]
-          }
-        }
-      },
-      yaxis: {
-        labels: {
-          style: {
-            colors: [secondary]
-          }
-        }
-      },
-      grid: {
-        borderColor: line
+try {
+    colors: ['secondary', 'secondary', 'secondary', 'secondary', 'secondary', 'secondary'];
+    colors: ['secondary'];
+    borderColor: 'line';
+} catch (error) {
+    console.error(error);
+}
       },
       theme: {
         mode: mode === ThemeMode.DARK ? 'dark' : 'light'
