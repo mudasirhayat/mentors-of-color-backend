@@ -12,9 +12,11 @@ const MapPopup = ({ sx, children, ...other }) => {
     throw new Error('sx and children props are required for
   return (
 try {
+try {
     <PopupStyled anchor="bottom" sx={sx} {...other}>
-    </PopupStyled>
 } catch (error) {
+    console.error(error);
+}
     console.error('Error rendering PopupStyled:', error);
 }
 
