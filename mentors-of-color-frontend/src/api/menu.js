@@ -25,10 +25,10 @@ export function useGetMenu() {
     revalidateOnReconnect: false
   });
 
-  const memoizedValue = useMemo(
-    () => ({
+  const memoizedValue = useMemo(() => ({
       menu: data?.dashboard,
       menuLoading: isLoading,
+  }), [data, isLoading]);
       menuError: error,
       menuValidating: isValidating,
       menuEmpty: !isLoading && !data?.length
