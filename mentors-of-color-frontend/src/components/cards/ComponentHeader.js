@@ -35,9 +35,9 @@ const ComponentHeader = ({ title, caption, directory, link }) => {
 );
 
 ComponentHeader.propTypes = {
-  title: PropTypes.string,
-  caption: PropTypes.string,
-  directory: PropTypes.string,
+title: PropTypes.string.isRequired,
+  caption: PropTypes.string.isRequired,
+  directory: PropTypes.string.isRequired,
   link: PropTypes.string
 };
 
