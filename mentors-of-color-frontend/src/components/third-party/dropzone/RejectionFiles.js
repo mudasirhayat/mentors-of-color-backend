@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types';
 
 // material-ui
+import {
+  Box,
+  Paper,
+  Typography
+} from '@mui/material';
 import { alpha } from '@mui/material/styles';
-import { Box, Paper, Typography } from '@mui/material';
 import getDropzoneData from 'utils/getDropzoneData';
 
 try {
