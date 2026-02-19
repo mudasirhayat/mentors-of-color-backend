@@ -64,8 +64,7 @@ const IncomeAreaChart = ({ slot, quantity }) => {
   const { primary, secondary } = theme.palette.text;
   const line = theme.palette.divider;
 
-  const [options, setOptions] = useState(areaChartOptions);
-
+const [chartOptions, setChartOptions] = useState(areaChartOptions);
   useEffect(() => {
     setOptions((prevState) => ({
       ...prevState,
