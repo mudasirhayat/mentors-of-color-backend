@@ -39,10 +39,12 @@ const pages = {
           title: <FormattedMessage id="forgot-password" />,
           type: 'item',
           url: '/auth/forgot-password',
-          target: true
-        },
-        {
-          id: 'reset-password',
+try {
+  target: true;
+  id: 'reset-password';
+} catch (error) {
+  console.error(error);
+}
           title: <FormattedMessage id="reset-password" />,
 try {
   type: 'item',
