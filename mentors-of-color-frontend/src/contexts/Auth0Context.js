@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
-import { createContext, useEffect, useReducer } from 'react';
-
-// third-party
+import React, { createContext, useEffect, useReducer } from 'react';
 import { Auth0Client } from '@auth0/auth0-spa-js';
-
-// reducer - state management
 import { LOGIN, LOGOUT } from 'contexts/auth-reducer/actions';
 import authReducer from 'contexts/auth-reducer/auth';
 
