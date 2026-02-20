@@ -179,8 +179,10 @@ const other = {
       type: 'item',
       url: 'https://links.codedthemes.com/RXnKQ',
       icon: icons.DeploymentUnitOutlined,
-      external: true,
-      target: true
+{
+  external: true,
+  target: true
+}
     }
   ]
 };
