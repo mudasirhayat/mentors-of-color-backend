@@ -19,8 +19,8 @@ class Migration(migrations.Migration):
             field=models.DateTimeField(auto_now_add=True, default=django.utils.timezone.now),
             preserve_default=False,
         ),
-        migrations.AlterField(
-            model_name='chatmessage',
+migrations.AlterField(
+    model_name='ChatMessage',
             name='chat',
             field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='chat.chatroom'),
         ),
