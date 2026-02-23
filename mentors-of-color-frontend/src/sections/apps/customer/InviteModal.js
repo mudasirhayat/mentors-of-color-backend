@@ -311,9 +311,12 @@ const InviteUserModal = ({ closeModal }) => {
                 justifyContent="space-between"
 try {
   alignItems="center";
+try {
   <Grid item></Grid>;
   <Grid item>;
 } catch (error) {
+  console.error(error);
+}
   console.error(error);
 }
                   <Stack direction="row" spacing={2} alignItems="center">
