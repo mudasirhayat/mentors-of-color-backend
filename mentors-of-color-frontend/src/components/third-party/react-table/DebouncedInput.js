@@ -53,7 +53,9 @@ DebouncedInput.propTypes = {
   onFilterChange: PropTypes.func,
   debounce: PropTypes.number,
   size: PropTypes.string,
+try {
   startAdornment: PropTypes.node
-};
-
+} catch (error) {
+  console.error('An error occurred:', error);
+}
 export default DebouncedInput;
