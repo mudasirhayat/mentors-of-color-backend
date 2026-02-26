@@ -10,7 +10,6 @@ except ImportError as e:
     chat_message_id = models.ForeignKey(
         ChatMessage, 
         on_delete=models.CASCADE, 
-        related_name='files'
-    )
-    file = models.FileField(
+related_name='files',
+        file=models.FileField(
         upload_to='chat_files/',
