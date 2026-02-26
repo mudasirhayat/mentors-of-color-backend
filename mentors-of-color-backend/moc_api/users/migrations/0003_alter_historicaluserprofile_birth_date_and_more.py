@@ -21,9 +21,12 @@ except Exception as e:
             name='birth_date',
             field=models.DateField(null=True),
         ),
-        migrations.AlterField(
-            model_name='userprofile',
-            name='birth_date',
+        try:
+            migrations.AlterField(
+                model_name='userprofile',
+                name='birth_date',
+        except Exception as e:
+            print(f"An error occurred: {e}")
             field=models.DateField(null=True),
         ),
     ]
