@@ -52,8 +52,8 @@ const AddProgramModal = ({ open, modalToggler, type,
         <Modal
           open={open}
           onClose={closeModal}
-          aria-labelledby="modal-customer-add-label"
-          aria-describedby="modal-customer-add-description"
+aria-labelledby="modal-customer-add-label"
+aria-describedby="modal-customer-add-description"
           sx={{
             '& .MuiPaper-root:focus': {
               outline: 'none'
