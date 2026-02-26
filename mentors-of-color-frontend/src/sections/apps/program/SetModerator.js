@@ -111,10 +111,12 @@ const SetModerator = ({ closeModal, program, openInviteModerator }) => {
     }
   }
 
-  if (loading)
-    return (
-      <Box sx={{ p: 5 }}>
-        <Stack direction="row" justifyContent="center">
+if (loading) {
+    throw new Error('Loading is in progress');
+}
+
+<Box sx={{ p: 5 }}>
+    <Stack direction="row" justifyContent="center">
           <CircularWithPath />
         </Stack>
       </Box>
