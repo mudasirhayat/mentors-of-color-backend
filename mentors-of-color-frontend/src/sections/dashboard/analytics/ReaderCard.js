@@ -3,9 +3,7 @@ import { useState } from 'react';
 // material-ui
 import { AvatarGroup, Box, Button, Divider, Grid, LinearProgress, Stack, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-
-// project import
-import Avatar from 'components/@extended/Avatar';
+import { Avatar } from 'components/@extended';
 import MainCard from 'components/MainCard';
 import { ThemeDirection } from 'config';
 
