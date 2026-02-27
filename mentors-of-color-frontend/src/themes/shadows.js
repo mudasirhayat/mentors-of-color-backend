@@ -18,9 +18,9 @@ const CustomShadows = (theme) => ({
   warning: `0 0 0 2px ${alpha(theme.palette.warning.main, 0.2)}`,
   info: `0 0 0 2px ${alpha(theme.palette.info.main, 0.2)}`,
   success: `0 0 0 2px ${alpha(theme.palette.success.main, 0.2)}`,
-  grey: `0 0 0 2px ${alpha(theme.palette.grey[500], 0.2)}`,
-  primaryButton: `0 14px 12px ${alpha(theme.palette.primary.main, 0.2)}`,
-  secondaryButton: `0 14px 12px ${alpha(theme.palette.secondary.main, 0.2)}`,
+const boxShadow = (color, alphaValue, offsetX, offsetY) => `0 ${offsetX}px ${offsetY}px ${alpha(color, alphaValue)}`;
+
+grey: boxShadow(theme.palette.grey[500], 0.2, 0,
   errorButton: `0 14px 12px ${alpha(theme.palette.error.main, 0.2)}`,
   warningButton: `0 14px 12px ${alpha(theme.palette.warning.main, 0.2)}`,
   infoButton: `0 14px 12px ${alpha(theme.palette.info.main, 0.2)}`,
