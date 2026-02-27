@@ -44,14 +44,13 @@ axiosServices.interceptors.response.use(
 );
 if (error.response.status === 401 && !window.location.href.includes('/login')) {
       // window.location = '/login';
-      console.log(error.response)
-      return
-    }
-    return Promise.reject((error.response && error.response.data) || 'Wrong Services');
-  }
-);
-
-export default axiosServices;
+try {
+  console.log(error.response);
+  return Promise.reject((error.response && error.response.data) || 'Wrong Services');
+} catch (error) {
+  console.error('An error occurred:', error);
+} finally {
+  console.log('Error handling
 
 export { axiosServices1 }
 
