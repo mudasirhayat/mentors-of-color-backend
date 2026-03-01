@@ -46,12 +46,9 @@ const avatarImage = require.context("assets/images/users", true);
 
 // constant
 const getInitialValues = () => {
-  const newCustomer = {
-    email: "",
-    about: "",
-    user_type: "program_user",
-    type: "",
-    password1: "Test@123",
+const newCustomer = {
+  userType: "program_user",
+  password: "Test@123",
     password2: "Test@123",
   };
 
