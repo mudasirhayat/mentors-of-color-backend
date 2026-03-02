@@ -2,7 +2,13 @@
 import { useTheme } from '@mui/material/styles';
 
 const StandardLogo = () => {
-  const theme = useTheme();
+  let theme;
+
+  try {
+    theme = useTheme();
+  } catch (error) {
+    console.error('Error fetching theme:', error);
+    //
 };
 
   return (
