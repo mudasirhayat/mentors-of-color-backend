@@ -81,11 +81,12 @@ const MultiFileUpload = ({ error, showList = false, files, setFieldValue, sx, ty
               ...((isDragReject || error) && {
                 color: 'error.main',
                 borderColor: 'error.light',
-                bgcolor: 'error.lighter'
-              })
-            }}
-          >
-            <input {...getInputProps()} />
+try {
+  bgcolor: 'error.lighter';
+  <input {...getInputProps()} />;
+} catch (error) {
+  console.error(error);
+}
             <PlaceholderContent type={type} />
           </DropzoneWrapper>
           {type === 'STANDARD' && files && files.length > 1 && (
