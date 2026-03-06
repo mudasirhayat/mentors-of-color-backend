@@ -77,9 +77,9 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.send(text_data=json.dumps({
             'type': 'chat_message',
             'message': event['message'],
-            'user_id': event['user_id'],
-            'timestamp': event['timestamp'],
-            'user_name': user_name if user_name else "N/A",
+'user_id': event.get('user_id'),
+'timestamp': event.get('timestamp'),
+'user_name': user_name if user_name else "N/A",
 
         }))
 
