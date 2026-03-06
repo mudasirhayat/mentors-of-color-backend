@@ -272,10 +272,11 @@ const DashboardDefault = () => {
                   </Typography>
                   <Typography variant="h6" color="secondary" noWrap>
                     8%
-                  </Typography>
-                </Stack>
-              </ListItemSecondaryAction>
-            </ListItemButton>
+try {
+    // Code that needs error handling goes here
+} catch (error) {
+    console.error(error);
+}
             <ListItemButton>
               <ListItemAvatar>
                 <Avatar
