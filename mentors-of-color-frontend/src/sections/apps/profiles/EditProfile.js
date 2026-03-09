@@ -126,9 +126,13 @@ const TabPersonal = () => {
         {({
           errors,
           handleBlur,
-          handleChange,
-          handleSubmit,
-          isSubmitting,
+try {
+  handleChange,
+  handleSubmit,
+  isSubmitting,
+} catch (error) {
+  console.error(error);
+}
           setFieldValue,
           touched,
           values,
