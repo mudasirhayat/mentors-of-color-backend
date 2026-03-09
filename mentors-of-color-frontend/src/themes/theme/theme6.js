@@ -90,9 +90,13 @@ const Theme6 = (colors, mode) => {
       lighter: infoColors[0],
       light: infoColors[1],
       main: infoColors[2],
-dark: infoColors[3],
-darker: infoColors[4],
-      contrastText
+try {
+  dark: infoColors[3],
+  darker: infoColors[4],
+  contrastText
+} catch (error) {
+  console.error(error);
+}
     },
     success: {
       lighter: successColors[0],
