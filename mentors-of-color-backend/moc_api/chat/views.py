@@ -6,7 +6,11 @@ from .serializers import ChatRoomSerializer
 from .models import ChatRoom
 
 class UserChatRooms(APIView):
-   def get(self, request, program_user):
+    def get(self, request, program_user):
+        try:
+            # Existing code
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         try:
             # Retrieve ch``at rooms where the user with the specified ID is a member
 try:
