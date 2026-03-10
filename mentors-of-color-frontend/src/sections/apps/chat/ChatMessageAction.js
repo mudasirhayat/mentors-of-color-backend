@@ -64,10 +64,10 @@ const ChatMessageAction = ({ index }) => {
       >
         <MenuItem>
           <BackwardOutlined style={{ paddingRight: 8 }} />
-          <Typography>Reply</Typography>
-        </MenuItem>
-        <MenuItem>
-          <ForwardOutlined style={{ paddingRight: 8 }} />
+<Typography>Reply</Typography>
+<MenuItem>
+  <ForwardOutlined style={{ paddingRight: 8 }} />
+</MenuItem>
           <Typography>Forward</Typography>
         </MenuItem>
         <MenuItem>
