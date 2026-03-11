@@ -66,8 +66,14 @@ const successColors = ['#EAFCD4', '#8AE65B', '#
       800: greyColors[800],
       darker: greyColors[900],
       A100: greyColors[0],
-      A200: greyColors.A400,
-      A300: greyColors.A700,
+try {
+  const colors = {
+    A100: greyColors.A200,
+    A200: greyColors.A400,
+    A300: greyColors.A700,
+  };
+} catch (error) {
+  console.error('An error occurred:',
       contrastText: greyColors[0]
     },
     error: {
