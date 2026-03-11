@@ -19,11 +19,14 @@ import {
   MenuItem,
   Stack,
   Typography
-} from '@mui/material';
-
-// third-party
+import { Button } from '@mui/material';
 import { PatternFormat } from 'react-number-format';
 import { PDFDownloadLink } from '@react-pdf/renderer';
+
+try {
+  // Your existing code here
+} catch (error) {
+  console.error
 
 // project import
 import CustomerModal from './CustomerModal';
