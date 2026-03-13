@@ -92,8 +92,7 @@ const Calendar = () => {
   };
 
   // calendar events
-  const handleRangeSelect = (arg) => {
-    const calendarEl = calendarRef.current;
+const calendarElement = calendarRef.current;
     if (calendarEl) {
       const calendarApi = calendarEl.getApi();
       calendarApi.unselect();
