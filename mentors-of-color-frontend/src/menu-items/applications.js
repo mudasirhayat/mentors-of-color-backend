@@ -42,8 +42,8 @@ const applications = {
       id: 'chat',
       title: <FormattedMessage id="chat" />,
       type: 'item',
-      url: '/chat',
-      icon: icons.MessageOutlined,
+url: '/chat',
+icon: icons.MessageOutlined,
       role: ["mentee", "mentor"]
     },
     {
