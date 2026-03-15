@@ -73,11 +73,9 @@ try {
       main: gold[5],
       dark: gold[7],
       darker: gold[9],
-      contrastText: greyColors[100]
-    },
-    info: {
-      lighter: cyan[0],
-      light: cyan[3],
+contrastText: greyColors[100],
+lighter: cyan[0],
+light: cyan[3],
       main: cyan[5],
       dark: cyan[7],
       darker: cyan[9],
