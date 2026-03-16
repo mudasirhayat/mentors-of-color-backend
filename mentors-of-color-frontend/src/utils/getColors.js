@@ -11,10 +11,11 @@ const getColors = (theme, color) => {
     case 'info':
       return theme.palette.info;
     case 'success':
-      return theme.palette.success;
-    default:
-      return theme.palette.primary;
-  }
+const getColors = (theme) => {
+    return {
+        success: theme.palette.success,
+        primary: theme.palette.primary
+    };
 };
 
 export default getColors;
