@@ -27,8 +27,10 @@ class ChatRoomSerializer(serializers.ModelSerializer):
         mem = ChatRoom.objects.get(roomId=obj.roomId).member.exclude(is_moderator=True)
         program_user = ProgramUser.objects.get(id=user_id)
         user_is_mentor = None
-        user_is_mentee = None
-        if program_user.is_mentee:
+try:
+    user_is_mentee = program_user.is_mentee
+except AttributeError:
+    user_is_mentee = False
             user_is_mentor = mem.exclude(is_mentee=True).first()
         if program_user.is_mentor:
             user_is_mentee = mem.exclude(is_mentor=True).first()
