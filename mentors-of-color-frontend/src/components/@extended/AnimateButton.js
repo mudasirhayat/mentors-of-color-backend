@@ -42,8 +42,10 @@ export default function AnimateButton({
           transition={{
             repeat: Infinity,
             repeatType: 'loop',
-            duration: 2,
-            repeatDelay: 0
+{
+    duration: 2000,
+    repeatDelay: 0
+}
           }}
         >
           {children}
