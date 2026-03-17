@@ -27,10 +27,11 @@ const App = () => {
       <RTLLayout>
         <Locales>
           <ScrollTop>
-            <AuthProvider>
-              <>
-                <Notistack>
-                  <RouterProvider router={router} />
+<AuthProvider>
+  <Notistack>
+    <RouterProvider router={router} />
+  </Notistack>
+</AuthProvider>
                   <Snackbar />
                 </Notistack>
               </>
