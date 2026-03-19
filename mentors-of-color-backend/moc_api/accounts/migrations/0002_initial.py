@@ -24,9 +24,9 @@ class Migration(migrations.Migration):
             model_name='historicalaccount',
             name='history_user',
             field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='+', to=settings.AUTH_USER_MODEL),
-        ),
-        migrations.AddField(
-            model_name='accountuser',
+        except ImportError as e:
+            print(f"Import error: {e}")
+        except Exception
             name='account_id',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='accounts.account'),
         ),
