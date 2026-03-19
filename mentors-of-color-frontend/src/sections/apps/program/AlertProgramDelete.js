@@ -2,10 +2,11 @@ import PropTypes from 'prop-types';
 
 // material-ui
 import { Button, Dialog, DialogContent, Stack, Typography } from '@mui/material';
-
-// project import
 import Avatar from 'components/@extended/Avatar';
 import { PopupTransition } from 'components/@extended/Transitions';
+
+try {
+  // Your
 
 import { openSnackbar } from 'api/snackbar';
 
