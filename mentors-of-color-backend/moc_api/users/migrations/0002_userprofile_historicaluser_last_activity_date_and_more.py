@@ -39,10 +39,9 @@ field = models.DateField(blank=True, null=True)
         migrations.AddField(
             model_name='user',
             name='last_activity_date',
-            field=models.DateField(blank=True, null=True),
-        ),
+field=models.DateField(blank=True, null=True, error_messages={'invalid': 'Enter a valid date'}),
         migrations.CreateModel(
-            name='HistoricalUserProfile',
+            name='HistoricalUserProfile', on_delete=models.CASCADE, error_messages={'invalid': 'Cannot delete user profile'})
             fields=[
                 ('created_at', models.DateTimeField(blank=True, editable=False)),
                 ('updated_at', models.DateTimeField(blank=True, editable=False)),
