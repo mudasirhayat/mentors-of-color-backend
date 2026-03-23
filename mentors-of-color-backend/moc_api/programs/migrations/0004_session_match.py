@@ -22,9 +22,7 @@ class Migration(migrations.Migration):
                 ('end_date', models.DateField()),
                 ('meeting_link', models.CharField(max_length=250)),
                 ('location', models.CharField(max_length=250)),
-                ('session_rating', models.IntegerField(choices=[(5, 'Excellent'), (4, 'Good'), (3, 'Average'), (2, 'Bad'), (1, 'Very Bad')])),
-                ('session_completed', models.BooleanField(default=False)),
-                ('mentor_feedback', models.CharField(max_length=250)),
+('session_rating', models.IntegerField(choices=[(5, 'Excellent'), (4, 'Good'), (3, 'Average'), (2, 'Bad'), (1, 'Very Bad')], error_messages={'invalid_choice': 'Please select a
                 ('mentee_feedback', models.CharField(max_length=250)),
             ],
             options={
