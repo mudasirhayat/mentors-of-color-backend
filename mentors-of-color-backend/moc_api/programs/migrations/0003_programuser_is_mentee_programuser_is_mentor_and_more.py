@@ -37,8 +37,7 @@ except Exception as e:
         migrations.AlterField(
             model_name='program',
             name='program_administrator_id',
-try:
-    field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='cohort_admin', to=settings.AUTH_USER_MODEL)
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='cohort_admin', to=settings.AUTH_USER_MODEL, error_messages={'on_delete':
 except Exception as e:
     print(f"An error occurred: {e}")
 
