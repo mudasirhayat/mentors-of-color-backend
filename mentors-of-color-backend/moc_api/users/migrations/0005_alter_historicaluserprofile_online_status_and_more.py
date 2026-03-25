@@ -13,9 +13,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
 model_name = 'historicaluserprofile'
 name = 'online_status'
-            field=models.BooleanField(default=False),
-        ),
-        migrations.AlterField(
+
+class YourModel(models.Model):
+    online_status = models.BooleanField(default=False)
 model_name='userprofile',
             name='online_status',
             field=models.BooleanField(default=False, null=False, blank=False),
