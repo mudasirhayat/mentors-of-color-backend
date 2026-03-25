@@ -141,8 +141,8 @@ const AddProgramForm = ({ closeModal }) => {
                       </Stack>
                     </Grid>
 
-                    <Grid item xs={12}>
-                      <Stack spacing={1} >
+<Grid item xs={12}>
+  <Stack spacing={1}>
                         <InputLabel htmlFor="program-unique-name">Program Unique Name</InputLabel>
                         <TextField
                           fullWidth
