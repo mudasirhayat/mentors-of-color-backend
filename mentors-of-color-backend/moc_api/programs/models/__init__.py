@@ -13,5 +13,8 @@ __all__ = (
 
 auditlog.register(Program)
 auditlog.register(ProgramUser)
-auditlog.register(Match)
-auditlog.register(Session)
+try:
+    auditlog.register(Match)
+    auditlog.register(Session)
+except Exception as e:
+    print(f"An error occurred: {e}")
