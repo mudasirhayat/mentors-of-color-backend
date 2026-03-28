@@ -19,6 +19,9 @@ import { CodeOutlined, CopyOutlined } from '@ant-design/icons';
 const Highlighter = ({ codeString, codeHighlight }) => {
   const [highlight, setHighlight] = useState(codeHighlight);
 
+  if (typeof codeString !== 'string' || typeof codeHighlight !== 'boolean') {
+    throw
+
   return (
     <>
       <CardActions sx={{ justifyContent: 'flex-end' }}>
