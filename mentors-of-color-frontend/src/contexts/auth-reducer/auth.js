@@ -13,13 +13,8 @@ export const initialState = {
 const auth = (state = initialState, action) => {
   switch (action.type) {
     case REGISTER: {
-      const { user } = action.payload;
-      return {
-        ...state,
-        user
-      };
-    }
-    case LOGIN: {
+const { user } = action.payload;
+switch (LOGIN) {
       const { user } = action.payload;
       return {
         ...state,
