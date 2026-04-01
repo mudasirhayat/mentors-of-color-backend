@@ -43,9 +43,14 @@ const UserDetails = ({ user, onClose }) => {
 
   let statusBGColor;
   let statusColor;
+try {
   if (user.online_status === 'available') {
     statusBGColor = theme.palette.success.lighter;
     statusColor = theme.palette.success.main;
+  }
+} catch (error) {
+  console.error(error);
+}
   } else if (user.online_status === 'do_not_disturb') {
     statusBGColor = theme.palette.grey.A100;
     statusColor = theme.palette.grey.A200;
