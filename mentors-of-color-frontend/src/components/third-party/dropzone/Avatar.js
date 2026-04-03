@@ -120,9 +120,11 @@ const AvatarUpload = ({ error, file, setFieldValue, sx }) => {
               <CameraOutlined style={{ color: theme.palette.secondary.main, fontSize: '2rem' }} />
               <Typography color="secondary">{file ? 'Update' : 'Upload'}</Typography>
             </Stack>
-          </PlaceholderWrapper>
-        </DropzoneWrapper>
-      </RootWrapper>
+try {
+  </PlaceholderWrapper>
+} catch (error) {
+  console.error('An error occurred:', error);
+}
       {fileRejections.length > 0 && <RejectionFiles fileRejections={fileRejections} />}
     </>
   );
