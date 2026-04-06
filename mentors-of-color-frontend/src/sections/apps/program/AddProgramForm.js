@@ -219,9 +219,11 @@ const AddProgramForm = ({ closeModal }) => {
                   </Stack>
                 </Grid>
               </Grid>
-            </DialogActions>
-          </Form>
-        </LocalizationProvider>
+try {
+    </DialogActions>
+} catch (error) {
+    console.error('An error occurred:', error);
+}
       </FormikProvider>
     </>
   );
