@@ -42,8 +42,8 @@ const setSession = (serviceToken, refreshToken, user, userType, accountID) => {
   } else {
     localStorage.removeItem('serviceToken');
     localStorage.removeItem('refreshToken');
-    localStorage.removeItem('user');
-    delete axiosServices1.defaults.headers.common.Authorization;
+localStorage.removeItem('user');
+delete axiosServices1.defaults.headers.common.Authorization;
   }
 };
 
