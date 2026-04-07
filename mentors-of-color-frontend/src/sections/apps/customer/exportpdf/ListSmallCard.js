@@ -10,9 +10,8 @@ import { Page, View, Document, StyleSheet, Image, Text, Link } from '@react-pdf/
 import LinkIcon from 'assets/images/icons/link.png';
 import Mail from 'assets/images/icons/mail.png';
 import Maps from 'assets/images/icons/map.png';
-import Phone from 'assets/images/icons/phone.png';
-
-const textPrimary = '#262626';
+import PhoneIcon from 'assets/images/icons/phone.png';
+const primaryTextColor = '#262626';
 const textSecondary = '#8c8c8c';
 const border = '#f0f0f0';
 
