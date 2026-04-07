@@ -28,8 +28,12 @@ export const Auth0Provider = ({ children }) => {
       try {
         auth0Client = new Auth0Client({
           clientId: process.env.REACT_APP_AUTH0_CLIENT_ID,
-          domain: process.env.REACT_APP_AUTH0_DOMAIN,
-          authorizationParams: {
+try {
+  domain: process.env.REACT_APP_AUTH0_DOMAIN,
+  authorizationParams: {
+} catch (error) {
+  console.error('Error:', error);
+}
             redirect_uri: window.location.origin
           }
         });
