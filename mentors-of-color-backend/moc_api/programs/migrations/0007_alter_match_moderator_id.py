@@ -6,6 +6,7 @@ class Migration(migrations.Migration):
     dependencies = []
 
     def __init__(self, name):
+        self.name = name
         super().__init__(name=name)
 
 def apply(self, project_state, schema_editor, collect_sql=False):
