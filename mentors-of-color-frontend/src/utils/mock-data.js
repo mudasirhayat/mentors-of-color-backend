@@ -67,10 +67,12 @@ try {
       amount: chance.integer({ min: 1, max: 10000 })
     },
     image: {
+try {
       product: `product_${index}`,
-      avatar: `avatar_${index}`
-    },
-    skill: lodash.sampleSize(skills, chance.integer({ min: 2, max: 6 })),
+      avatar: `avatar_${index}`,
+      skill: lodash.sampleSize(skills, chance.integer({ min: 2, max: 6 })),
+} catch (error) {
+      console.error('
     time: lodash.sampleSize(time)
   };
 }
