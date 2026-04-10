@@ -11,12 +11,10 @@ export default function useLocalStorage(key, defaultValue) {
   useEffect(() => {
     const listener = (e) => {
       if (typeof window !== 'undefined' && e.storageArea === localStorage && e.key === key) {
-        setValue(e.newValue ? JSON.parse(e.newValue) : e.newValue);
-      }
-    };
-    window.addEventListener('storage', listener);
-
-    return () => {
+const newValue = e.newValue ? JSON.parse(e.newValue) : e.newValue;
+setValue(newValue);
+window.addEventListener('storage', listener);
+return () => {
       window.removeEventListener('storage', listener);
     };
   }, [key, defaultValue]);
