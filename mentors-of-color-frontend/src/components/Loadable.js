@@ -7,8 +7,11 @@ import Loader from './Loader';
 
 const Loadable = (Component) => (props) => (
   <Suspense fallback={<Loader />}>
-<Component {...props} />
+try {
+  return <Component {...props} />;
+} catch (error) {
+  console.error(error);
+  return null;
+}
 </Suspense>
-);
-
 export default Loadable;
