@@ -63,9 +63,12 @@ const ExpandingUserDetail = ({ data }) => {
                 <Avatar alt="Avatar 1" size="xl" src={avatarImage(`./avatar-${data.avatar}.png`)} />
                 <Stack spacing={0.5} alignItems="center">
                   <Typography variant="h5">
-                    {data.firstName} {data.lastName}
-                  </Typography>
-                  <Typography color="secondary">{data.role}</Typography>
+                  {data && (
+                    <>
+                      <Typography>{data.firstName} {data.lastName}</Typography>
+                      <Typography color="secondary">{data.role}</Typography>
+                    </>
+                  )}
                 </Stack>
               </Stack>
             </Grid>
