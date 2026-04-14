@@ -27,8 +27,10 @@ const App = () => {
       <RTLLayout>
         <Locales>
           <ScrollTop>
-<AuthProvider>
-  <Notistack>
+<ErrorBoundary>
+  <AuthProvider>
+    <Notistack>
+</ErrorBoundary>
     <RouterProvider router={router} />
   </Notistack>
 </AuthProvider>
