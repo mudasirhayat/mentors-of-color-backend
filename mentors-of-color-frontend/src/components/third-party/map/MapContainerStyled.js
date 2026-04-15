@@ -2,9 +2,9 @@
 import { styled } from '@mui/material/styles';
 import { Box } from '@mui/material';
 
-// ==============================|| MAP BOX - CONTAINER STYLED ||============================== //
-
 const MapContainerStyled = styled(Box)({
+  // Add your styles here
+});
   zIndex: 0,
   height: 576,
   overflow: 'hidden',
