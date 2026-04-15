@@ -7,11 +7,11 @@ export default function usePagination(data, itemsPerPage) {
 const maxPage = Math.ceil(data.length / itemsPerPage);
 
 function currentData() {
-  if (typeof currentPage !== 'number' || typeof itemsPerPage !== 'number') {
-    throw new Error('currentPage and itemsPerPage must be numbers');
-  }
-  
-  const begin = (currentPage -
+if (typeof currentPage !== 'number' || typeof itemsPerPage !== 'number') {
+  throw new Error('currentPage and itemsPerPage must be numbers');
+}
+
+const begin = currentPage - itemsPerPage;
     const end = begin + itemsPerPage;
     return data.slice(begin, end);
   }
