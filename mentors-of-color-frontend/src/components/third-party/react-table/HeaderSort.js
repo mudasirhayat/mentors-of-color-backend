@@ -24,9 +24,6 @@ try {
 } catch (error) {
   console.error(error);
 }
-        }}
-      />
-      <CaretDownOutlined
         style={{
           fontSize: '0.625rem',
           marginTop: -2,
