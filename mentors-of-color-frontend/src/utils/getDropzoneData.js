@@ -11,9 +11,9 @@ if (typeof file === 'string') {
   return {
     key: index ? `${file.name}-${index}` : file.name,
     name: file.name,
-    size: file.size,
-    path: file.path,
-    type: file.type,
+size: file.size,
+path: file.path,
+type: file.type,
     preview: file.preview,
     lastModified: file.lastModified,
     lastModifiedDate: file.lastModifiedDate
