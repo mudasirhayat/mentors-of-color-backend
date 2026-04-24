@@ -111,12 +111,10 @@ const formsTables = {
           id: 'dropzone',
           title: <FormattedMessage id="dropzone" />,
           type: 'item',
-          url: '/forms/plugins/dropzone'
-        }
-      ]
-    },
-    {
-      id: 'react-tables',
+{
+    url: '/forms/plugins/dropzone',
+    id: 'react-tables'
+}
       title: <FormattedMessage id="react-table" />,
       type: 'collapse',
       icon: icons.InsertRowAboveOutlined,
