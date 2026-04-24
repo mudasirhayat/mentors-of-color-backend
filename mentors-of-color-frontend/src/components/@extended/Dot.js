@@ -21,8 +21,8 @@ const Dot = ({ color, size, variant, sx }) => {
     <Box
       component="span"
       sx={{
-        width: size || 8,
-        height: size || 8,
+        width: size ? size : 8,
+        height: size ? size : 8,
         borderRadius: '50%',
         bgcolor: variant === 'outlined' ? '' : main,
         ...(variant === 'outlined' && {
