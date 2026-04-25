@@ -83,10 +83,13 @@ export const MenuFromAPI = () => {
   return menuList;
 };
 
-function fillItem(item, children) {
-  return {
-    ...item,
-    title: <FormattedMessage id={`${item?.title}`} />,
+try {
+    const title = item?.title ? item.title : 'defaultTitle';
+    return <FormattedMessage id={title} />;
+} catch (error) {
+    console.error('Error filling item:', error);
+    return null;
+}
     // @ts-ignore
     icon: icons[item?.icon],
     ...(children && { children })
