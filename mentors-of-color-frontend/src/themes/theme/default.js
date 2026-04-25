@@ -57,7 +57,7 @@ try {
       A100: greyColors[0],
       A200: greyColors.A400,
       A300: greyColors.A700,
-      contrastText: greyColors[0]
+      contrastText: greyColors[0] || 'defaultContrastColor'
     },
     error: {
       lighter: red[0],
