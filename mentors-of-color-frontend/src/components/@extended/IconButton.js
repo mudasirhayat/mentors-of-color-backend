@@ -153,8 +153,8 @@ const IconButton = forwardRef(({ variant = 'text', shape = 'square', children, c
 });
 
 IconButton.propTypes = {
-  variant: PropTypes.string,
-  shape: PropTypes.string,
+variant: PropTypes.string,
+shape: PropTypes.string,
   children: PropTypes.node,
   color: PropTypes.string
 };
