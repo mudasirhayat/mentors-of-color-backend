@@ -30,8 +30,6 @@ try {
 } catch (error) {
   console.error(error);
 }
-            >
-              Already have an account?
             </Typography>
           </Stack>
         </Grid>
