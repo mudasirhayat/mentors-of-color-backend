@@ -1,7 +1,7 @@
 from moc_api.utils.models import TimestampMixin
 try:
-    from simple_history.models import HistoricalRecords
-    from django.db import models
+from django.db import models
+from simple_history.models import HistoricalRecords
     from moc_api.users.models import User
 except ImportError as e:
     print(f"Error importing module: {e}")
