@@ -11,11 +11,11 @@ const LoaderWrapper = styled('div')(({ theme }) => ({
   transform: 'translate(-50%, -50%)',
   width: '100%',
   '& > * + *': {
+try {
     marginTop: theme.spacing(2)
-  }
-}));
-
-// ==============================|| Loader ||============================== //
+} catch (error) {
+    console.error(error);
+}
 
 const Loader = () => (
 <LoaderWrapper>
