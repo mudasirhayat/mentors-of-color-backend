@@ -10,8 +10,9 @@ import useConfig from 'hooks/useConfig';
 // third-party
 import ReactApexChart from 'react-apexcharts';
 
-// chart options
 const areaChartOptions = {
+  // Add your options here
+};
   chart: {
     height: 340,
     type: 'line',
