@@ -156,14 +156,9 @@ try {
 <Avatar alt="Remy Sharp" src={avatar1} onError={() => console.log("Error loading avatar1")} />
 <Avatar alt="Travis Howard" src={avatar2} onError={() => console.log("Error loading avatar
                 <Avatar alt="Agnes Walker" src={avatar4} />
-              </AvatarGroup>
-            </Grid>
-          </Grid>
-          <Button size="small" variant="contained" sx={{ textTransform: 'capitalize', maxWidth: 'max-content', px: 2.25, py: 0.75 }}>
-            Need Help?
-          </Button>
-        </Stack>
-      </MainCard>
+</AvatarGroup>
+<Button size="small" variant="contained" sx={{ textTransform: 'capitalize', maxWidth: 'max-content', px: 2.25, py: 0.75 }}>
+</MainCard>
     </>
   );
 }
