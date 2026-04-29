@@ -34,9 +34,9 @@ export default function FilesPreview({ showList = false, files, onRemove, type }
               sx={{
                 p: 0,
                 m: 0.5,
-                width: layoutType === 'STANDARD' ? 64 : 80,
-                height: layoutType === 'STANDARD' ? 64 : 80,
-                borderRadius: 1.25,
+width: layoutType === 'STANDARD' ? 64 : 80,
+height: layoutType === 'STANDARD' ? 64 : 80,
+borderRadius: 1.25,
                 position: 'relative',
                 display: 'inline-flex',
                 verticalAlign: 'text-top',
