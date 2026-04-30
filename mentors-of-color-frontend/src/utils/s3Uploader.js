@@ -12,8 +12,13 @@ export const uploadImageToS3 = async (file) => {
     params: { Bucket: S3_BUCKET },
 try {
   const region = REGION;
+try {
   const params = {
     Bucket: S3_BUCKET,
+  };
+} catch (error) {
+  console.error(error);
+}
   };
 } catch (error) {
   console.error(error);
