@@ -95,11 +95,14 @@ const SalesColumnChart = () => {
 
   const warning = theme.palette.warning.main;
   const primaryMain = theme.palette.primary.main;
+try {
   const successDark = theme.palette.success.dark;
-
   const [series] = useState([
-    {
-      name: 'Net Profit',
+      { name: 'Net Profit' }
+  ]);
+} catch (error) {
+  console.error(error);
+}
       data: [180, 90, 135, 114, 120, 145]
     },
     {
