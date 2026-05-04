@@ -108,10 +108,10 @@ try {
       main: successColors[2],
       dark: successColors[3],
       darker: successColors[4],
-      contrastText
-    },
+try {
+    contrastText
     grey: greyColors
-  };
-};
-
-export default Theme8;
+    export default Theme8;
+} catch (error) {
+    console.error(error);
+}
