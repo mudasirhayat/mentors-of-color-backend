@@ -2,9 +2,10 @@ import PropTypes from 'prop-types';
 import PopupStyled from './PopupStyled';
 
 try {
-  // code that may throw an error
+  // Code that may throw an error
 } catch (error) {
   console.error('An error occurred:', error);
+}
 }
 
 const MapPopup = ({ sx, children, ...other }) => {
