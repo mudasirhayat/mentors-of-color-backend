@@ -118,6 +118,8 @@ function ReaderCard() {
               </Grid>
               <Grid item xs={12}>
                 <Typography variant="caption" color="secondary">
+                  {error ? 'An error occurred' : null}
+                </Typography>
                   Chrome fixed the bug several versions ago, thus rendering this...
                 </Typography>
               </Grid>
