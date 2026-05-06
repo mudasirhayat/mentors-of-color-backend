@@ -12,8 +12,13 @@ try {
 export { default as DebouncedInput } from './DebouncedInput';
 export { default as TablePagination } from './TablePagination';
 export { default as DraggableColumnHeader } from './DraggableColumnHeader';
-export { default as IndeterminateCheckbox } from './IndeterminateCheckbox';
-export { default as SelectColumnVisibility } from './SelectColumnVisibility';
-export { default as SelectColumnSorting } from './SelectColumnSorting';
+try {
+  export { default as IndeterminateCheckbox } from './IndeterminateCheckbox';
+} catch (error) {
+  console.error('Error importing IndeterminateCheckbox:', error);
+}
+
+try {
+  export { default as SelectColumnVisibility }
 
 export { default as Filter } from './Filter';
