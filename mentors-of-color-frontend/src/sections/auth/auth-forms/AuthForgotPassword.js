@@ -97,8 +97,11 @@ const AuthForgotPassword = () => {
 )}
                 )}
               </Grid>
-              {errors.submit && (
-                <Grid item xs={12}>
+{errors.submit && (
+  <Grid item xs={12}>
+    {/* Your content here */}
+  </Grid>
+)}
                   <FormHelperText error>{errors.submit}</FormHelperText>
                 </Grid>
               )}
