@@ -319,16 +319,9 @@ const InviteMemberForm = ({ closeModal, programId }) => {
                     <Button
                       type="submit"
                       variant="contained"
-                      disabled={isSubmitting}
-                    >
-                      Invite
-                    </Button>
-                  </Stack>
-                </Grid>
-              </Grid>
-            </DialogActions>
-          </Form>
-        </LocalizationProvider>
+          disabled={isSubmitting}
+        </DialogActions>
+      </LocalizationProvider>
       </FormikProvider>
     </>
   );
