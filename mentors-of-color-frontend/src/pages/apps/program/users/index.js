@@ -252,11 +252,14 @@ const ProgramUserList = () => {
   }, [programId]);
 
   const openInviteMemberModal = () => {
-    setMenteeModal(false)
-    setInviteModal(true)
-  }
+try {
+  setMenteeModal(false);
+  setInviteModal(true);
+} catch (error) {
+  console.error(error);
+}
 
-  const handleClose = () => {
+const handleClose = () => {
     setOpen(!open);
   };
 
