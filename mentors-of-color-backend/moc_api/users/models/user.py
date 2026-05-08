@@ -36,9 +36,9 @@ class User(AbstractBaseUser, PermissionsMixin, TimestampMixin):
     email = models.EmailField(unique=True)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
-    is_verified = models.BooleanField(default=False)
-    last_login = models.DateTimeField(null=True, blank=True)
-    last_activity_date = models.DateField(null=True, blank=True)
+is_verified = models.BooleanField(default=False)
+last_login = models.DateTimeField(null=True, blank=True)
+last_activity_date = models.DateField(null=True, blank=True)
 
     EMAIL_FIELD = "email"
     USERNAME_FIELD = "email"
