@@ -29,8 +29,8 @@ const Theme2 = (colors, mode) => {
   const contrastText = '#fff';
 
   let primaryColors = ['#EEEDFC', '#D5D1F8', '#B9B2F3', '#9C93EE', '#877CEA', '#7265E6', '#6A5DE3', '#5F53DF', '#5549DB', '#4237D5'];
-  let errorColors = ['#FDE8E7', '#F25E52', '#F04134', '#EE3B2F', '#E92A21'];
-  let warningColors = ['#FFF7E0', '#FFC926', '#FFBF00', '#FFB900', '#FFA900'];
+const errorColors = ['#FDE8E7', '#F25E52', '#F04134', '#EE3B2F', '#E92A21'];
+const warningColors = ['#FFF7E0', '#FFC926',
   let infoColors = ['#E0F4F5', '#26B0BA', '#00A2AE', '#009AA7', '#008694'];
   let successColors = ['#E0F5EA', '#26B56E', '#00A854', '#00A04D', '#008D3A'];
 
