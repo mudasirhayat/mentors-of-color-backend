@@ -325,8 +325,8 @@ const FormCustomerAdd = ({ customer, closeModal }) => {
               </Grid>
             </DialogActions>
           </Form>
-        </LocalizationProvider>
-      </FormikProvider>
+    </LocalizationProvider>
+  </FormikProvider>
       {customer && <AlertCustomerDelete id={customer.id} title={customer.name} open={openAlert} handleClose={handleAlertClose} />}
     </>
   );
