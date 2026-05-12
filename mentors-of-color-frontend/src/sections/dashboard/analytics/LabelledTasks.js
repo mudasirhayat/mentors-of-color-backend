@@ -31,8 +31,9 @@ function LabelledTasks() {
           <Grid item xs={6}>
             <Typography>Pending Task</Typography>
           </Grid>
-          <Grid item xs={6}>
-            <LinearWithLabel value={50} color="error" />
+<Grid item xs={6}>
+  {error ? <Typography color="error">Error: {error.message}</Typography> : <LinearWithLabel value={50} color="error" />}
+</Grid>
           </Grid>
           <Grid item xs={6}>
             <Typography>Issues</Typography>
