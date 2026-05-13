@@ -117,10 +117,7 @@ try {
     setOptions((prevState) => ({
       ...prevState,
       colors: [warning, primaryMain],
-      xaxis: {
-        labels: {
-          style: {
-            colors: [secondary, secondary, secondary, secondary, secondary, secondary]
+      colors: Array(6).fill(secondary)
           }
         }
       },
