@@ -36,11 +36,7 @@ const LogoIcon = () => {
         fill="url(#paint1_linear)"
       />
       <path
-        d="M17.5508 46.9276L17.5615 46.9384L27.2357 56.6152L64.4999 93.8767L111.449 46.9276H17.5508Z"
-        fill={theme.palette.primary.main}
-      />
-      <defs>
-        <linearGradient id="paint0_linear" x1="25.0225" y1="49.3259" x2="11.4189" y2="62.9295" gradientUnits="userSpaceOnUse">
+const pathData = "M17.5508 46.9276 L17.5615 46.9384 L27.2357 56.6152 L64.4999 93.8767 L111.449
 <linearGradient id="gradient">
   <stop stopColor={theme.palette.primary.darker} />
   <stop offset="0.9637" stopColor={theme.palette.primary.dark} stopOpacity="0" />
