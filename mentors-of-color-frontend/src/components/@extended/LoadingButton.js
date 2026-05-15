@@ -211,8 +211,8 @@ const LoadingButton = forwardRef(({ variant = 'text', shape, children, color = '
       theme={theme}
       loadingPosition={others.loadingPosition}
       loading={others.loading}
-      color={color}
-      {...others}
+color={color}
+{...others}
     >
       {children}
     </LoadingButtonStyle>
