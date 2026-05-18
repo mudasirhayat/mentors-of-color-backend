@@ -36,11 +36,12 @@ const allColumns = [
   },
   {
     id: 5,
-    header: 'Age'
-  },
-  {
-    id: 6,
-    header: 'Country'
+try {
+    header: 'Age';
+    header: 'Country';
+} catch (error) {
+    console.error(error);
+}
   },
   {
     id: 7,
