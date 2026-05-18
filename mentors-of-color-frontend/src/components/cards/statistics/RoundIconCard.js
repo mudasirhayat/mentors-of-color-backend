@@ -30,14 +30,18 @@ const RoundIconCard = ({ primary, secondary, content, iconPrimary, color, bgcolo
         <Grid item>
           <IconButton sx={{ bgcolor, color, '& .MuiSvgIcon-root': { fontSize: '1.5rem' } }} size="large">
             {primaryIcon}
-          </IconButton>
-        </Grid>
-      </Grid>
+import React from 'react';
+import { IconButton, MainCard } from 'some-library';
+
+const RoundIconCard = () => {
+  return (
+    <MainCard>
+      <IconButton />
     </MainCard>
   );
 };
 
-RoundIconCard.propTypes = {
+RoundIconCard.propTypes
   primary: PropTypes.string,
   secondary: PropTypes.string,
   content: PropTypes.string,
