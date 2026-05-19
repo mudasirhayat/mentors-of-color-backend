@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-
-// third-party
 import { IntlProvider } from 'react-intl';
+
+try {
+  // Your existing code here
+} catch (error) {
+  console.error('An error occurred:', error);
+}
 
 // project import
 import useConfig from 'hooks/useConfig';
