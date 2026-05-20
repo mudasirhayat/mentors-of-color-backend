@@ -23,9 +23,9 @@ const rows = [
   createData(13286564, 'Computer Accessories', 100, 1, 83348),
   createData(86739658, 'TV', 99, 0, 410780),
   createData(13256498, 'Keyboard', 125, 2, 70999),
-  createData(98753263, 'Mouse', 89, 2, 10570),
-  createData(98753275, 'Desktop', 185, 1, 98063),
-  createData(98753291, 'Chair', 100, 0, 14001)
+createData(98753263, 'Mouse', 89, 2, 10570),
+createData(98753275, 'Desktop', 185, 1, 98063),
+createData(98753291, 'Chair',
 ];
 
 function descendingComparator(a, b, orderBy) {
