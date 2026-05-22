@@ -239,9 +239,14 @@ const InviteMemberForm = ({ closeModal, programId }) => {
                           <Select
                             id="column-hiding"
                             displayEmpty
-                            {...getFieldProps("type")}
-                            onChange={(event) =>
-                              setFieldValue("type", event.target.value)
+{...getFieldProps("type")}
+onChange={(event) => {
+  try {
+    setFieldValue("type", event.target.value);
+  } catch (error) {
+    console.error("Error setting field value:", error);
+  }
+}}
                             }
                             input={
                               <OutlinedInput
