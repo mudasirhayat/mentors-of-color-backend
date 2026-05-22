@@ -49,8 +49,8 @@ class Migration(migrations.Migration):
                 ('history_user', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='+', to=settings.AUTH_USER_MODEL)),
             ],
             options={
-                'verbose_name': 'historical user',
-                'verbose_name_plural': 'historical users',
+'verbose_name': 'historical user',
+'verbose_name_plural': 'historical users',
                 'ordering': ('-history_date', '-history_id'),
                 'get_latest_by': ('history_date', 'history_id'),
             },
