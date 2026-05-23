@@ -44,9 +44,10 @@ const CellEditable = ({ getValue: initialValue, row: { index }, column: { id, co
       userInfoSchema = yup.object().shape({
         userInfo: yup
           .number()
-          .typeError('Age must be number')
+.typeError('Age must be number')
           .required('Age is required')
           .min(18, 'You must be at least 18 years')
+          .validate(age);
           .max(65, 'You must be at most 65 years')
       });
       break;
