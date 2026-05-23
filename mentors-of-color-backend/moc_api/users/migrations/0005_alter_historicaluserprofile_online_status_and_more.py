@@ -16,8 +16,8 @@ name = 'online_status'
 
 class YourModel(models.Model):
     online_status = models.BooleanField(default=False)
-model_name='userprofile',
-            name='online_status',
-            field=models.BooleanField(default=False, null=False, blank=False),
+model_name = 'UserProfile'
+name = 'online_status'
+field = models.BooleanField(default=False, null=False, blank=False)
         ),
     ]
