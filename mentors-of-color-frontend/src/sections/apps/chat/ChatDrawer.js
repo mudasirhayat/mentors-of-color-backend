@@ -33,11 +33,7 @@ import SimpleBar from 'components/third-party/SimpleBar';
 
 import { ThemeMode } from 'config';
 import useAuth from 'hooks/useAuth';
-
-// assets
-import {
-  CheckCircleFilled,
-  ClockCircleFilled,
+import { CheckCircleFilled, ClockCircleFilled } from 'ant-design/icons';
   LogoutOutlined,
   MinusCircleFilled,
   RightOutlined,
