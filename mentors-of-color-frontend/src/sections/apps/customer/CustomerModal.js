@@ -18,8 +18,9 @@ const CustomerModal = ({ open, modalToggler, customer }) => {
     () => {
       if (!customer) {
         return <InviteUserModal closeModal={closeModal} />
-      } else if (customer) {
-        return <FormCustomerAdd customer={customer || null} closeModal={closeModal} />
+if (customer) {
+  return <FormCustomerAdd customer={customer} closeModal={closeModal} />;
+}
       }
     },
 
