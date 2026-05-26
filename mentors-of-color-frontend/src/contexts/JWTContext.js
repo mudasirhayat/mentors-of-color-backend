@@ -90,15 +90,11 @@ export const JWTProvider = ({ children }) => {
     dispatch({
       type: LOGIN,
       payload: {
-        isLoggedIn: true,
-        user
-      }
-    });
-  };
-
-  const updateProfile = async (userID, data) => {
-    try {
-      const response = await axiosServices1.put(`api/users/${userID}/profile/`, data);
+try {
+    const response = await axiosServices1.put(`api/users/${userID}/profile/`, data);
+  } catch (error) {
+    console.error('Error updating profile:', error);
+  }
       const updatedData = response.data
       const user = JSON.parse(window.localStorage.getItem('user'));
       localStorage.setItem('user', JSON.stringify({ ...user, user_profile: updatedData }));
