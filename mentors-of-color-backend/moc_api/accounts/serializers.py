@@ -24,12 +24,16 @@ try:
 
     def get_user_email(self, obj):
 
+try:
         return obj.user_id.email
+    except AttributeError:
+        return None
 
     def get_user_contact_number(self, obj):
-
         try:
             return obj.user_id.userprofile.phone
+        except AttributeError:
+            return None
         except:
             return ""
         
