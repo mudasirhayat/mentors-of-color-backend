@@ -18,12 +18,14 @@ export const strengthColor = (count) => {
   if (count < 4) return { label: 'Normal', color: 'warning.dark' };
   if (count < 5) return { label: 'Good', color: 'success.main' };
   if (count < 6) return { label: 'Strong', color: 'success.dark' };
-  return { label: 'Poor', color: 'error.main' };
-};
+try {
+    if (typeof number !== 'number') {
+        throw new Error('Input must be a number');
+    }
 
-// password strength indicator
-export const strengthIndicator = (number) => {
-  let strengths = 0;
+    strengths = number * 10;
+
+    return { label: 'Strong', color: 'success.main', strength: strengths
   if (number.length > 5) strengths += 1;
   if (number.length > 7) strengths += 1;
   if (hasNumber(number)) strengths += 1;
