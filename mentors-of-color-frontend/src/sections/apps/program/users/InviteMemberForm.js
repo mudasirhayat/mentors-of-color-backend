@@ -44,9 +44,13 @@ import useAuth from "hooks/useAuth";
 
 const avatarImage = require.context("assets/images/users", true);
 
-// constant
 const getInitialValues = () => {
-const newCustomer = {
+    try {
+        const newCustomer = {
+            // existing code here
+        };
+        return newCustomer;
+    } catch (error) {
   userType: "program_user",
   password: "Test@123",
     password2: "Test@123",
