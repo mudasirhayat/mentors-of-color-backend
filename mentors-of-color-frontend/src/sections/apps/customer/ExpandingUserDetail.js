@@ -115,9 +115,11 @@ const ExpandingUserDetail = ({ data }) => {
                   <ListItemSecondaryAction>
                     <Typography align="right">
                       <PatternFormat displayType="text" format="+1 (###) ###-####" mask="_" defaultValue={data.contact} />
-                    </Typography>
-                  </ListItemSecondaryAction>
-                </ListItem>
+try {
+  // existing code here
+} catch (error) {
+  console.error(error);
+}
                 <ListItem>
                   <ListItemIcon>
                     <EnvironmentOutlined />
