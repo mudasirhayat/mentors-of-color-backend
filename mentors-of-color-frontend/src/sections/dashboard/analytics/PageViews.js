@@ -35,8 +35,8 @@ function PageViews() {
               </Typography>
             </Stack>
           </ListItemButton>
-          <ListItemButton divider>
-            <ListItemText
+<ListItemButton divider>
+  <ListItemText />
               primary={<Typography variant="subtitle1">Form Elements</Typography>}
               secondary={
                 <Typography color="textSecondary" sx={{ display: 'inline' }}>
