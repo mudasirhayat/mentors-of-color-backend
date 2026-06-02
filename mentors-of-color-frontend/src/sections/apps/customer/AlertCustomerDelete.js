@@ -23,8 +23,12 @@ export default function AlertCustomerDelete({ id, title, open, handleClose }) {
   const deletehandler = async () => {
     await deleteCustomer(id, loginUserID, accountID).then(() => {
       openSnackbar({
-open: true,
-message: 'Customer deleted successfully',
+try {
+    open: true;
+    message: 'Customer deleted successfully';
+} catch (error) {
+    console.error('An error occurred:', error);
+}
 anchorOrigin: { vertical: 'top', horizontal: 'right' },
 error: null,
         variant: 'alert',
