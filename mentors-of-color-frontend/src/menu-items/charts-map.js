@@ -4,8 +4,10 @@ import { FormattedMessage } from 'react-intl';
 // assets
 import { PieChartOutlined, EnvironmentOutlined } from '@ant-design/icons';
 
-// icons
 const icons = {
+  pieChart: PieChartOutlined,
+  environment: EnvironmentOutlined
+};
   PieChartOutlined,
   EnvironmentOutlined
 };
