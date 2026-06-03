@@ -157,9 +157,9 @@ const FormCustomerAdd = ({ customer, closeModal }) => {
 
   return (
     <>
-      <FormikProvider value={formik}>
-        <LocalizationProvider dateAdapter={AdapterDateFns}>
-          <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
+<FormikProvider value={formik}>
+  <LocalizationProvider dateAdapter={AdapterDateFns}>
+    <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
             <DialogTitle>{customer ? 'Edit User' : 'New Customer'}</DialogTitle>
             <Divider />
             <DialogContent sx={{ p: 2.5 }}>
