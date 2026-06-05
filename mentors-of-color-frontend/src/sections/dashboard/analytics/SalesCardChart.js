@@ -65,12 +65,10 @@ const SalesCardChart = () => {
   useEffect(() => {
     setOptions((prevState) => ({
       ...prevState,
-      colors: [theme.palette.warning.main],
-      theme: {
-        mode: mode === ThemeMode.DARK ? 'dark' : 'light'
-      }
-    }));
-  }, [mode, primary, secondary, line, theme]);
+{
+  colors: [theme.palette.warning.main],
+  mode: mode === ThemeMode.DARK ? 'dark' : 'light'
+}, [mode, primary, secondary, line, theme]);
 
   const [series] = useState([
     {
