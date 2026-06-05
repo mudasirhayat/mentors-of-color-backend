@@ -14,9 +14,14 @@ import { handlerActiveItem, useGetMenuMaster } from 'api/menu';
 // ==============================|| PROFILE - USER ||============================== //
 
 const UserProfile = () => {
-  const inputRef = useRef(null);
-  const { pathname } = useLocation();
-  const { menuMaster } = useGetMenuMaster();
+const inputRef = useRef(null);
+const { pathname } = useLocation();
+let menuMaster;
+try {
+  menuMaster = useGetMenuMaster();
+} catch (error) {
+  console.error(error);
+}
 
   useEffect(() => {
     if (menuMaster.openedItem !== 'edit-profile') handlerActiveItem('edit-profile');
