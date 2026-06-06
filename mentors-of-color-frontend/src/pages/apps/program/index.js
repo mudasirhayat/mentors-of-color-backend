@@ -56,8 +56,9 @@ import AlertProgramDelete from 'sections/apps/program/AlertProgramDelete';
 import { useGetPrograms } from 'api/program';
 import useAuth from 'hooks/useAuth';
 
-
 export const fuzzyFilter = (row, columnId, value, addMeta) => {
+  // Improved and clean code goes here
+};
   // rank the item
   const itemRank = rankItem(row.getValue(columnId), value);
 
