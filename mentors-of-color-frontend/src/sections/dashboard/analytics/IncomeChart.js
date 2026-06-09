@@ -129,8 +129,8 @@ const [chartOptions, setChartOptions] = useState(areaChartOptions);
   ]);
 
   useEffect(() => {
-    switch (quantity) {
-      case 'By volume':
+switch (quantity) {
+    case 'By volume':
         setSeries([
           {
             name: 'Income',
