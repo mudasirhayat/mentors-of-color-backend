@@ -65,9 +65,9 @@ export function useGetUserChat(userName) {
     () => ({
       chat: data || [],
       chatLoading: isLoading,
-      chatError: error,
-      chatValidating: isValidating,
-      chatEmpty: !isLoading && !data?.length
+chatError: error,
+chatValidating: isValidating,
+chatEmpty: !isLoading && !data?.length
     }),
     [data, error, isLoading, isValidating]
   );
