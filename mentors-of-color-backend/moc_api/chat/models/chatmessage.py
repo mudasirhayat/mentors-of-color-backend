@@ -2,8 +2,7 @@ from moc_api.utils.models import TimestampMixin
 try:
 from django.db import models
 from simple_history.models import HistoricalRecords
-    from moc_api.users.models import User
-except ImportError as e:
+from moc_api.users.models import User
     print(f"Error importing module: {e}")
 from moc_api.programs.models import ProgramUser
 from .chat import ChatRoom
