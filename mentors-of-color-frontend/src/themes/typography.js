@@ -38,11 +38,11 @@ try {
   },
   h6: {
     fontWeight: 400,
+{
     fontSize: '0.875rem',
-    lineHeight: 1.57
-  },
-  caption: {
-    fontWeight: 400,
+    lineHeight: 1.57,
+    fontWeight: 400
+}
     fontSize: '0.75rem',
     lineHeight: 1.66
   },
