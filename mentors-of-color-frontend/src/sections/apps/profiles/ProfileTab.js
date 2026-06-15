@@ -45,14 +45,12 @@ const handleListItemClick = (index, route) => {
 
   useEffect(() => {
     setSelectedIndex(getPathIndex(pathname));
-  }, [pathname]);
-
-  return (
-    <List
-      component="nav"
-      sx={{
-        p: 0,
-        "& .MuiListItemIcon-root": {
+  } catch (error) {
+    console.error(error);
+  }
+}, [pathname]);
+component="nav"
+"& .MuiListItemIcon-root": {
           minWidth: 32,
           color: theme.palette.grey[500],
         },
