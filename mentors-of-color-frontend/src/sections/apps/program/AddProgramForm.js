@@ -167,12 +167,13 @@ const AddProgramForm = ({ closeModal }) => {
                             input={<OutlinedInput id="select-program-administrator" placeholder="Sort by" />}
                             renderValue={(selected) => {
                               if (!selected) {
-                                return <Typography variant="subtitle1">Select Program Administrator</Typography>;
-                              }
-                              return (
-                                <Typography variant="subtitle2">
-                                  {selected}
-                                </Typography>
+try {
+    return <Typography variant="subtitle1">Select Program Administrator</Typography>;
+} catch (error) {
+    console.error('Error:', error);
+} finally {
+    return <Typography variant="subtitle2"></Typography>;
+}
                               );
                             }}
                           >
