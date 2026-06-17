@@ -63,8 +63,9 @@ const MainCard = forwardRef(
               p: '12px !important',
               fontFamily: theme.typography.fontFamily,
 fontSize: '0.75rem',
-...(modal && {
-            position: 'absolute',
+...(modal 
+    ? { position: 'absolute' }
+    : {}),
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
