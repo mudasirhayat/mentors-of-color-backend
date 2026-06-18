@@ -26,8 +26,12 @@ spacing={2}
             variant="subtitle2"
             color="secondary"
             component={Link}
-            href="https://codedthemes.com"
-            target="_blank"
+try {
+  href = "https://codedthemes.com";
+  target = "_blank";
+} catch (error) {
+  console.error(error);
+}
             underline="hover"
           >
             Terms and Conditions
