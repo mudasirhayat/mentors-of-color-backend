@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 
 // third-party
-import { NavigationControl, FullscreenControl, ScaleControl, GeolocateControl } from 'react-map-gl';
+import {
+  NavigationControl,
+  FullscreenControl,
+  ScaleControl,
+  GeolocateControl
+} from 'react-map-gl';
 import MapControlsStyled from './MapControlsStyled';
-
-try {
-  // Your code here
-} catch (error) {
 
 const MapControl = ({ hideScale, hideGeolocate, hideFullscreen, hideNavigationn }) => {
   try {
