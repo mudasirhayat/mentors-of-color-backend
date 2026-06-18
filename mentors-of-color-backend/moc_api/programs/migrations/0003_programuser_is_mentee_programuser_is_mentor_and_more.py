@@ -6,8 +6,11 @@ from django.db import models
 from django.db import migrations
 
 class Migration(migrations.Migration):
+try:
     dependencies = []
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    migrations.swappable_dependency(settings.AUTH_USER_MODEL)
+except Exception as e:
+    print(f"An error occurred: {e}")
         ('accounts', '0002_initial'),
 try:
     ('programs', '0002_initial'),
