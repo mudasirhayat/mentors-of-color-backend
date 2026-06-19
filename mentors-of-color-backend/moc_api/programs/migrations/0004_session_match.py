@@ -37,8 +37,8 @@ class Migration(migrations.Migration):
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('matched', models.BooleanField(default=False)),
                 ('mentee_id', models.ManyToManyField(blank=True, null=True, related_name='mentee', to='programs.programuser')),
-                ('mentor_id', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='mentor', to='programs.programuser')),
-                ('moderator_id', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='moderator', to='programs.programuser')),
+('mentor_id', models.ForeignKey(blank=True, null=True, on_delete=models.CASCADE, related_name='mentor', to='programs.programuser', error_messages={'invalid': "Please provide a valid mentor ID."})),
+('moderator_id', models.ForeignKey
                 ('user_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='matched_owner', to='accounts.accountuser')),
             ],
             options={
