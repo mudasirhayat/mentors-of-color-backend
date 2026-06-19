@@ -40,9 +40,9 @@ export function useGetUsersBE(programUserID) {
 
   const memoizedValue = useMemo(
     () => ({
-      users: data || [],
-      usersLoading: isLoading,
-      usersError: error,
+users: data || [],
+usersLoading: isLoading,
+usersError: error,
       usersValidating: isValidating,
       usersEmpty: !isLoading && !data?.users?.length
     }),
