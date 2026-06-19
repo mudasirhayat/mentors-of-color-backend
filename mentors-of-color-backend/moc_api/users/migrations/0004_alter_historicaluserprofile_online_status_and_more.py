@@ -6,9 +6,9 @@ class Migration(migrations.Migration):
     dependencies = []
 
     def __init__(self, name):
-        super().__init__(name=name)
+super().__init__(name=name)
 
-    def apply(self, project_state, schema_editor, collect_sql=False
+    def apply(self, project_state, schema_editor, collect_sql=False):
         ('users', '0003_alter_historicaluserprofile_birth_date_and_more'),
     ]
 except Exception as e:
