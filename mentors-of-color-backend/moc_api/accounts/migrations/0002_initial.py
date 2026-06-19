@@ -37,7 +37,11 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='account',
-            name='account_owner_id',
-            field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, related_name='account_owner', to=settings.AUTH_USER_MODEL),
+name = 'account_owner_id'
+field = models.OneToOneField(
+    on_delete=django.db.models.deletion.CASCADE,
+    related_name='account_owner',
+    to=settings.AUTH_USER_MODEL
+)
         ),
     ]
