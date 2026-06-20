@@ -73,10 +73,10 @@ const headCells = [
     id: 'fat',
     align: 'right',
     disablePadding: false,
-    label: 'Total Order'
-  },
-  {
-    id: 'carbs',
+{
+    label: 'Total Order',
+    id: 'carbs'
+}
     align: 'left',
     disablePadding: false,
 
