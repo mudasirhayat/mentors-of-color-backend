@@ -30,9 +30,11 @@ class Migration(migrations.Migration):
             },
         ),
         migrations.CreateModel(
-            name='HistoricalUser',
-            fields=[
-                ('id', models.BigIntegerField(auto_created=True, blank=True, db_index=True, verbose_name='ID')),
+try:
+    name = 'HistoricalUser'
+    id = models.BigIntegerField(auto_created=True, blank=True, db_index=True, verbose_name='ID')
+except Exception as e:
+    print(f"An error occurred: {e}")
                 ('password', models.CharField(max_length=128, verbose_name='password')),
                 ('is_superuser', models.BooleanField(default=False, help_text='Designates that this user has all permissions without explicitly assigning them.', verbose_name='superuser status')),
                 ('created_at', models.DateTimeField(blank=True, editable=False)),
