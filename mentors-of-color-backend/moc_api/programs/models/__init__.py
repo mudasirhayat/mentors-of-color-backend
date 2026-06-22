@@ -6,12 +6,9 @@ from auditlog.registry import auditlog
 
 __all__ = (
     'Program',
-    'ProgramUser',
-    'Match',
-    'Session',
-)
+from auditlog.registry import auditlog
 
-auditlog.register(Program)
+auditlog.register(ProgramUser)
 auditlog.register(ProgramUser)
 try:
     auditlog.register(Match)
