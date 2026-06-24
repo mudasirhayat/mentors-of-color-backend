@@ -89,12 +89,16 @@ try {
           {...others}
           timeout={{
             appear: 0,
-            enter: 150,
-            exit: 150
-          }}
-          direction={direction}
-        >
-          <Box sx={positionSX}>{children}</Box>
+const config = {
+  enter: 150,
+  direction: {direction},
+};
+
+return (
+  <Box sx={positionSX}>
+    {children}
+  </Box>
+);
         </Slide>
       )}
 
