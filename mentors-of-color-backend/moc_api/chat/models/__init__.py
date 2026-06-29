@@ -1,7 +1,9 @@
-from .chat import ChatRoom
-# from .chatmessagefile import ChatMessageFile
-from .chatmessage import ChatMessage
-from .userchat import UserChat
+try:
+    from .chat import ChatRoom
+    from .chatmessage import ChatMessage
+    from .userchat import UserChat
+except ImportError as e:
+    print(f"Error importing module: {e}")
 from auditlog.registry import auditlog
 
 try:
