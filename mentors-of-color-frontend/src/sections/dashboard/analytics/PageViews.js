@@ -9,9 +9,13 @@ import MainCard from 'components/MainCard';
 function PageViews() {
   return (
     <>
-      <Grid container alignItems="center" justifyContent="space-between">
-        <Grid item>
-          <Typography variant="h5">Page Views by Page Title</Typography>
+<Grid container alignItems="center" justifyContent="space-between">
+  <Grid item>
+    <Typography variant="h5">
+      Page Views by Page Title
+    </Typography>
+  </Grid>
+</Grid>
         </Grid>
         <Grid item />
       </Grid>
