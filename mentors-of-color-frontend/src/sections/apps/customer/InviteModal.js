@@ -221,13 +221,9 @@ const InviteUserModal = ({ closeModal }) => {
                           id="customer-email"
                           placeholder="Enter User Email"
                           {...getFieldProps("email")}
-                          error={Boolean(touched.email && errors.email)}
-                          helperText={touched.email && errors.email}
-                        />
-                      </Stack>
-                    </Grid>
-
-                    <Grid item xs={12}>
+error={touched.email && Boolean(errors.email)}
+helperText={touched.email && errors.email}
+<Grid item xs={12}>
                       <Stack spacing={1}>
                         <InputLabel htmlFor="customer-status">
                           User Type
