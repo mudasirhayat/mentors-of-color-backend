@@ -29,8 +29,11 @@ export const Auth0Provider = ({ children }) => {
         auth0Client = new Auth0Client({
           clientId: process.env.REACT_APP_AUTH0_CLIENT_ID,
 try {
-  domain: process.env.REACT_APP_AUTH0_DOMAIN,
-  authorizationParams: {
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const authorizationParams = {};
+
+try {
+    // code block
 } catch (error) {
   console.error('Error:', error);
 }
